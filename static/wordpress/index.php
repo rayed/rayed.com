@@ -510,5 +510,9 @@ $map = array(
  "86" => "/posts/2004/12/thunderbird-1-released/", 
 );
 
-header("Location: " . $map[$_GET["p"]] );
+if (isset($_GET["p"]) and isset($map[$_GET["p"]])) {
+    header("Location: " . $map[$_GET["p"]] );
+} else {
+    header("Location: /");
+}
 

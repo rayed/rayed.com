@@ -15,6 +15,10 @@ awk -F, ' { printf(" \"%s\" => \"%s\", \n", $2, $1) }' >> $OUTPUT
 cat >> $OUTPUT <<'EOF'
 );
 
-header("Location: " . $map[$_GET["p"]] );
+if (isset($_GET["p"]) and isset($map[$_GET["p"]])) {
+    header("Location: " . $map[$_GET["p"]] );
+} else {
+    header("Location: /");
+}
 
 EOF
