@@ -12,17 +12,17 @@ tags:
 wordpress_id: 1134
 
 ---
-<p>I am trying new way to fix the annoying &#8220;cannot change locale (UTF-8)&#8221; error, this error usually show when you login from your OSX to a Linux machine:</p>
-<pre>
-osx$ ssh ubuntu-server
-Last login: Sat Mar  9 09:04:40 2013 from 10.10.12.16
--bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8)
-[rayed@ubuntu-server ~]$
-</pre>
-<p>The problem happens because OSX send LC_CTYPE environment variable when you connect through ssh, the solution is to ask OSX not to send these variables. This can be done by editing you ssh config file on you OSX and commenting the &#8220;SendEnv&#8221; variable:</p>
-<pre>    
-osx$ sudo vi /etc/ssh_config
-:
-#SendEnv LANG LC_*
-:
-</pre>
+I am trying new way to fix the annoying "cannot change locale (UTF-8)" error, this error usually show when you login from your OSX to a Linux machine:
+<!--more-->
+
+    osx$ ssh ubuntu-server
+    Last login: Sat Mar  9 09:04:40 2013 from 10.10.12.16
+    -bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8)
+    [rayed@ubuntu-server ~]$
+
+The problem happens because OSX send LC_CTYPE environment variable when you connect through ssh, the solution is to ask OSX not to send these variables. This can be done by editing you ssh config file on you OSX and commenting the "SendEnv" variable:
+
+    osx$ sudo vi /etc/ssh_config
+    :
+    #SendEnv LANG LC_*
+    :

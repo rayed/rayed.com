@@ -11,16 +11,30 @@ tags:
 wordpress_id: 1458
 
 ---
-<p>If you to connect to PostgreSQL without typing a password, you can do it by having your password in the file &#8220;.pgpass&#8221;.</p>
-<p>The file reside in your home directory and must be readable to you only:</p>
-<pre><code>touch ~/.pgpass
-chmod 600 ~/.pgpass
-</code></pre>
-<p>The format is simple:</p>
-<pre><code>hostname:port:database:username:password 
-</code></pre>
-<p>For example:</p>
-<pre><code>*:*:my_database:rayed:my_hard_password
-</code></pre>
-<p>The &#8220;*&#8221; means any host using any port.</p>
-<p>This of course will work for &#8220;psql&#8221; and other tools to like &#8220;pg_dump&#8221;.</p>
+
+If you to connect to PostgreSQL without typing a password, you can do it by having your password in the file ".pgpass".<!--more-->
+
+
+The file reside in your home directory and must be readable to you only:
+
+    touch ~/.pgpass
+    chmod 600 ~/.pgpass
+
+The format is simple:
+
+    hostname:port:database:username:password 
+
+For example:
+
+    *:*:my_database:rayed:my_hard_password
+
+The "*" means any host using any port.
+
+No try issuing a command like:
+
+    psql -U rayed my_database
+
+It will connect without asking about the password!
+
+This of course will work for "psql" and other tools to like "pg_dump".
+

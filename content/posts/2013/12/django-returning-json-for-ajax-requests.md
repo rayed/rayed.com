@@ -12,19 +12,22 @@ tags:
 wordpress_id: 1508
 
 ---
-<p>In your <strong>views.py</strong> you can have a page that return JSON data for AJAX request like this:</p>
-<pre><code>from django.http import JsonResponse
+In your `views.py` you can have a page that return JSON data for AJAX request like this:<!--more-->
 
-def ajax(request):
-    data = {}
-    data['something'] = 'useful'
-    return JsonResponse(data)
-</code></pre>
-<p>This would work fine if you fill the data your self, but if you are getting the data from a model try the following:</p>
-<pre><code>from django.core import serializers
-def tasks_json(request):
-    tasks = Task.objects.all()
-    data = serializers.serialize("json", tasks)
-    return HttpResponse(data, content_type='application/json')
-</code></pre>
-<p>If you have non trivial application, I would recommend using <a href="http://www.django-rest-framework.org/">Django Rest Framework</a> or similar frameworks for better support for REST beyond simple JSON response. </p>
+    from django.http import JsonResponse
+
+    def ajax(request):
+        data = {}
+        data['something'] = 'useful'
+        return JsonResponse(data)
+
+
+This would work fine if you fill the data your self, but if you are getting the data from a model try the following:
+
+    from django.core import serializers
+    def tasks_json(request):
+        tasks = Task.objects.all()
+        data = serializers.serialize("json", tasks)
+        return HttpResponse(data, content_type='application/json')
+
+If you have non trivial application, I would recommend using <a href="http://www.django-rest-framework.org/">Django Rest Framework</a> or similar frameworks for better support for REST beyond simple JSON response. 

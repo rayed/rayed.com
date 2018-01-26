@@ -13,6 +13,10 @@ tags:
 wordpress_id: 1741
 
 ---
-<p>My presentation at <a href="https://riyadhlug.org/">Riyadh Linux User Group</a> about <a href="http://www.ansible.com/">Ansible</a></p>
-<p><iframe width="560" height="315" src="//www.youtube.com/embed/VteeJn6dwOc" frameborder="0" allowfullscreen></iframe></p>
-<p><iframe src="//www.slideshare.net/slideshow/embed_code/43039112" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
+
+My presentation at <a href="https://riyadhlug.org/">Riyadh Linux User Group</a> about <a href="http://www.ansible.com/">Ansible</a>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/VteeJn6dwOc" frameborder="0" allowfullscreen></iframe>
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/43039112" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+

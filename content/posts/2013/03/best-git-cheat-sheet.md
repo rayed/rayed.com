@@ -8,5 +8,6 @@ categories:
 wordpress_id: 1126
 
 ---
-<p>Click on each region to find out how to change its state:<br />
-<a href="http://ndpsoftware.com/git-cheatsheet.html">http://ndpsoftware.com/git-cheatsheet.html</a></p>
+Click on each region to find out how to change its state:
+http://ndpsoftware.com/git-cheatsheet.html
+

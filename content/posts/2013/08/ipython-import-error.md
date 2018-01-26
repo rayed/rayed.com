@@ -11,41 +11,41 @@ tags:
 wordpress_id: 1368
 
 ---
-<p>I tried to install IPython to play with it and learn more about scientific Python packages, but I faced an error on my first step:<br />
-<code></p>
-<pre>
-(env)rayed@ubuntu:~$ sudo aptitude ipython
-(env)rayed@ubuntu:~$ ipython
-Traceback (most recent call last):
-  File "/usr/bin/ipython", line 5, in <module>
-    from IPython.frontend.terminal.ipapp import launch_new_instance
-ImportError: No module named IPython.frontend.terminal.ipapp
-</module></pre>
-<p></code></p>
-<p>after 30 minutes of searching the net without any clues I figured it out, the problem was with my Python &#8220;VirtualEnv&#8221; setup, I setup my account to use a default virtual enviroument that was created earlier without the IPython packages, which means the python command doesn&#8217;t know about IPython! solving it was easy just &#8220;deactivate&#8221; the virtual env and it worked.</p>
-<p><code></p>
-<pre>
-(env)rayed@ubuntu:~$ deactivate
-rayed@ubuntu:~$ ipython
-Python 2.7.3 (default, Apr 10 2013, 06:20:15) 
-Type "copyright", "credits" or "license" for more information.
+I tried to install IPython to play with it and learn more about scientific Python packages, but I faced an error on my first step:
 
-IPython 0.12.1 -- An enhanced Interactive Python.
-?         -> Introduction and overview of IPython's features.
-%quickref -> Quick reference.
-help      -> Python's own help system.
-object?   -> Details about 'object', use 'object??' for extra details.
+<!--more-->
 
-In [1]: 
-</pre>
-<p></code></p>
-<h3>Tip</h3>
-<p>I installed IPython on my server, but I wanted to access it from my Mac, to achieve this securely I created an &#8220;ssh&#8221; tunnel from localhost port 8888 to the server localhost port 8888 then start IPython notebook on the server:<br />
-<code></p>
-<pre>osx$ ssh server -L 8888:127.0.0.1:8888
-$ ipython notebook
-[NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8888
-</pre>
-<p></code><br />
-Now I can access it locally using:<br />
-<a href="http://localhost:8888/">http://localhost:8888/</a></p>
+    (env)rayed@ubuntu:~$ sudo aptitude ipython
+    (env)rayed@ubuntu:~$ ipython
+    Traceback (most recent call last):
+      File "/usr/bin/ipython", line 5, in <module>
+        from IPython.frontend.terminal.ipapp import launch_new_instance
+    ImportError: No module named IPython.frontend.terminal.ipapp</module>
+
+after 30 minutes of searching the net without any clues I figured it out, the problem was with my Python "VirtualEnv" setup, I setup my account to use a default virtual enviroument that was created earlier without the IPython packages, which means the python command doesn't know about IPython! solving it was easy just "deactivate" the virtual env and it worked.
+
+    (env)rayed@ubuntu:~$ deactivate
+    rayed@ubuntu:~$ ipython
+    Python 2.7.3 (default, Apr 10 2013, 06:20:15) 
+    Type "copyright", "credits" or "license" for more information.
+
+    IPython 0.12.1 -- An enhanced Interactive Python.
+    ?         -> Introduction and overview of IPython's features.
+    %quickref -> Quick reference.
+    help      -> Python's own help system.
+    object?   -> Details about 'object', use 'object??' for extra details.
+
+    In [1]: 
+
+
+#### Tip
+
+I installed IPython on my server, but I wanted to access it from my Mac, to achieve this securely I created an "ssh" tunnel from localhost port 8888 to the server localhost port 8888 then start IPython notebook on the server
+
+    osx$ ssh server -L 8888:127.0.0.1:8888
+    $ ipython notebook
+    [NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8888
+
+Now I can access it locally using:
+(http://localhost:8888/)
+

@@ -11,17 +11,19 @@ tags:
 wordpress_id: 1493
 
 ---
-<p>Instead of having multiple settings files one for production and one for development and so on, I prefer to use an &#8220;if&#8221; statement with environment variable:</p>
-<pre><code>ENV = os.environ.get('DJANGO_ENV', '')
-print "==== Active Env: [%s]  ====" % (ENV)    
-if ENV == "dev":
-    # DEBUG
-    DEBUG = True
-    TEMPLATE_DEBUG = DEBUG
-else:
-    DEBUG = False
-    TEMPLATE_DEBUG = False
-</code></pre>
-<p>Then from your &#8220;.bashrc&#8221; file:</p>
-<pre><code>export DJANGO_ENV=dev
-</code></pre>
+Instead of having multiple settings files one for production and one for development and so on, I prefer to use an "if" statement with environment variable:<!--more-->
+
+    ENV = os.environ.get('DJANGO_ENV', '')
+    print "==== Active Env: [%s]  ====" % (ENV)    
+    if ENV == "dev":
+        # DEBUG
+        DEBUG = True
+        TEMPLATE_DEBUG = DEBUG
+    else:
+        DEBUG = False
+        TEMPLATE_DEBUG = False
+
+Then from your ".bashrc" file:
+
+    export DJANGO_ENV=dev
+

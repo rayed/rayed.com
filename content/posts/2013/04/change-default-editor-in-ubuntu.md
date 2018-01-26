@@ -12,4 +12,7 @@ tags:
 wordpress_id: 1157
 
 ---
-<pre><code>sudo update-alternatives --config editor</code></pre>
+
+Just type:
+
+    sudo update-alternatives --config editor
