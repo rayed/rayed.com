@@ -1,0 +1,12 @@
+baseURL = "https://rayed.com/blog/"
+languageCode = "en-us"
+title = "Rayed's Real Life"
+theme = "ananke"
+disqusShortname = "rayed"
+
+sectionPagesMenu = "main"
+
+[[menu.main]]
+    name = "Old Blog"
+    weight = -110
+    url = "https://rayed.com/wordpress/"
