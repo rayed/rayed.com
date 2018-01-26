@@ -1,4 +1,4 @@
-baseURL = "https://rayed.com/blog/"
+baseURL = "https://rayed.com/"
 languageCode = "en-us"
 title = "Rayed's Real Life"
 theme = "ananke"
@@ -9,4 +9,4 @@ sectionPagesMenu = "main"
 [[menu.main]]
     name = "Old Blog"
     weight = -110
-    url = "https://rayed.com/wordpress/"
+    url = "https://rayed.com/old_wordpress/"
