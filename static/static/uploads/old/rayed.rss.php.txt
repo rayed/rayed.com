@@ -1,0 +1,28 @@
+<?php
+/*
+Plugin Name: Rayed RSS 
+Plugin URI: http://wordpress.org/#
+Description: RSS Feed plugin 
+Author: Rayed Alrashed 
+Version: 0.1
+Author URI: http://rayed.com/
+*/ 
+
+if (preg_match('/wp-admin/',getcwd())) {
+  $path='../wp-includes/rss-functions.php'; 
+} else {
+  $path='./wp-includes/rss-functions.php';
+}
+include_once($path);
+
+
+function rayed_showlinks($url,$count=10) {
+  $rss = fetch_rss($url);
+  foreach($rss->items as $item) {
+    if($count==0) break;
+    $count--;
+    echo "<li><a href='$item[link]' title='$item[description]'>$item[title]</a></li>\n";
+  }
+}  
+
+?>

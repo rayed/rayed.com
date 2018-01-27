@@ -27,6 +27,7 @@ def convert(lines):
         line = re.sub('<h2>(.*)</h2>', r'\n\n### \1\n', line)
         line = re.sub('<h3>(.*)</h3>', r'\n\n#### \1\n', line)
         line = re.sub('<code>([^<]*)</code>', r'`\1`', line)
+        line = re.sub('https?://rayed.com/wordpress/wp-content', r'/static', line)
         s += line
     return s
 

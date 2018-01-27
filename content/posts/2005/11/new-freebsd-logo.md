@@ -8,6 +8,7 @@ categories:
 wordpress_id: 154
 
 ---
-<p>FreeBSD the amazing Operating System running this site got a new logo:<br />
-<img src='http://rayed.com/wordpress/wp-content/upload/freebsd_new_logo.jpg' alt='' /><br />
-<a href="http://logo-contest.freebsd.org/result/640-1.png">More Pictures</a></p>
+FreeBSD the amazing Operating System running this site got a new logo:
+<img src='/static/uploads/old/freebsd_new_logo.jpg' alt='' />
+<a href="http://logo-contest.freebsd.org/result/640-1.png">More Pictures</a>
+

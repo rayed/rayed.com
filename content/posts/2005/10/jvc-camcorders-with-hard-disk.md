@@ -8,6 +8,6 @@ categories:
 wordpress_id: 149
 
 ---
-<p>No tapes or discs any more! It stores 5 hours of DVD quality movies.<br />
-<a href="http://www.jvc.com/presentations/everio_g/"><img src='http://rayed.com/wordpress/wp-content/upload/jvc_camcorder.jpg' alt='JVC camcorder' /><br />
-http://www.jvc.com/presentations/everio_g/</a></p>
+No tapes or discs any more! It stores 5 hours of DVD quality movies.
+
+<a href="http://www.jvc.com/presentations/everio_g/"><img src='/static/uploads/old/jvc_camcorder.jpg' alt='JVC camcorder' />http://www.jvc.com/presentations/everio_g/</a>

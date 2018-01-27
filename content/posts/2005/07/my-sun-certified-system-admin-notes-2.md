@@ -8,5 +8,5 @@ categories:
 wordpress_id: 130
 
 ---
-<p>It is little old but I found it useful from time to time.<br />
-<a href="http://rayed.com/wordpress/wp-content/upload/SCSA.html">My Notes.</a></p>
+It is little old but I found it useful from time to time.
+<a href="/static/uploads/old/SCSA.html">My Notes</a>

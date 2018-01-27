@@ -8,7 +8,7 @@ categories:
 wordpress_id: 358
 
 ---
-<p>This is really funny 🙂<br />
-<a href="http://www.alwatan.com.sa/news/caricatureInfo.asp?issueno=2697&#038;imgID=1921"><br />
-<img src='http://rayed.com/wordpress/wp-content/uploads/2008/02/1702misp36n36.jpg' alt='Valentine' /><br />
-</a></p>
+This is really funny 🙂
+<a href="http://www.alwatan.com.sa/news/caricatureInfo.asp?issueno=2697&#038;imgID=1921">
+<img src='/static/uploads/2008/02/1702misp36n36.jpg' alt='Valentine' />
+</a>

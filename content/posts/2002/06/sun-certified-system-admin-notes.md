@@ -8,5 +8,7 @@ categories:
 wordpress_id: 11
 
 ---
-<p>While preparing for SCSA exams I wrote some notes, not very useful for study, but might be useful for quick reference.<br />
-<a href="/wordpress/wp-content/upload/SCSA.html">Sun Certified System Admin Notes</a>.</p>
+
+While preparing for SCSA exams I wrote some notes, not very useful for study, but might be useful for quick reference.
+
+<a href="/static/uploads/old/SCSA.html">Sun Certified System Admin Notes</a>

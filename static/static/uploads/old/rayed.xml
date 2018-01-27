@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:cc="http://web.resource.org/cc/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="http://del.icio.us/rayed">
+<title>del.icio.us/rayed</title>
+<link>http://del.icio.us/rayed</link>
+<description></description>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://www.openaddict.com/quick_and_dirty_guide_to_deploying_a_freebsd_6_1_server.html" />
+  <rdf:li rdf:resource="http://www.javascripttoolbox.com/lib/table/" />
+  <rdf:li rdf:resource="http://www.onlamp.com/lpt/a/2429" />
+  <rdf:li rdf:resource="http://www.bivingsreport.com/2006/9-ways-for-newspapers-to-improve-their-websites" />
+  <rdf:li rdf:resource="http://www.webdesignfromscratch.com/web-2.0-design-style-guide.cfm" />
+  <rdf:li rdf:resource="http://smashingmagazine.com/2006/12/19/50-beautiful-css-based-web-designs-in-2006" />
+  <rdf:li rdf:resource="http://www.w3.org/Style/CSS10/hall-of-fame.html" />
+  <rdf:li rdf:resource="http://www.roundedcornr.com/" />
+  <rdf:li rdf:resource="http://www.javalobby.org/java/forums/t86371.html" />
+  <rdf:li rdf:resource="http://www-128.ibm.com/developerworks/aix/library/au-badunixhabits.html" />
+  <rdf:li rdf:resource="http://mutopiaproject.org/" />
+  <rdf:li rdf:resource="http://www.france24.com/france24Public/ar/nouvelles/monde.html" />
+  <rdf:li rdf:resource="http://www.dw-world.de/dw/0,2142,613,00.html" />
+  <rdf:li rdf:resource="http://www.airtightinteractive.com/simpleviewer/" />
+  <rdf:li rdf:resource="http://www.sftpdrive.com/" />
+  <rdf:li rdf:resource="http://spindrop.us/2006/08/25/using-zend-search-lucene-in-a-symfony-app/" />
+  <rdf:li rdf:resource="http://portal.spidynamics.com/blogs/msutton/archive/2006/11/01/Top-10-Signs-You-Have-an-Insecure-Web-App.aspx#comments" />
+  <rdf:li rdf:resource="http://www.flickr.com/photos/yasiraldosary/" />
+  <rdf:li rdf:resource="http://www.yourcreditadvisor.com/blog/2006/10/102_personal_fi.html" />
+  <rdf:li rdf:resource="http://googleresearch.blogspot.com/2006/08/all-our-n-gram-are-belong-to-you.html" />
+  <rdf:li rdf:resource="http://www.alistapart.com/articles/printtopreview" />
+  <rdf:li rdf:resource="http://www.omanfotoland.com/" />
+  <rdf:li rdf:resource="http://www.dbsight.net/" />
+  <rdf:li rdf:resource="http://incubator.apache.org/solr/" />
+  <rdf:li rdf:resource="http://ideoplex.com/focus/java" />
+  <rdf:li rdf:resource="http://www.mezzoblue.com/tests/revised-image-replacement/" />
+  <rdf:li rdf:resource="http://www.phptr.com/articles/article.asp?p=461633&amp;seqNum=1&amp;rl=1" />
+  <rdf:li rdf:resource="http://www.freebsdfoundation.org/downloads/java.shtml" />
+  <rdf:li rdf:resource="http://www-128.ibm.com/developerworks/xml/library/x-simplexml.html" />
+  <rdf:li rdf:resource="http://www.darksleep.com/lucene/" />
+  <rdf:li rdf:resource="http://today.java.net/pub/a/today/2005/08/09/didyoumean.html" />
+ </rdf:Seq>
+</items>
+</channel>
+
+<item rdf:about="http://www.openaddict.com/quick_and_dirty_guide_to_deploying_a_freebsd_6_1_server.html">
+<title>Open Addict - Quick and Dirty Guide to Deploying a FreeBSD 6.1 Server</title>
+<link>http://www.openaddict.com/quick_and_dirty_guide_to_deploying_a_freebsd_6_1_server.html</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-12-25T19:59:25Z</dc:date>
+<dc:subject>freebsd tutorial</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/freebsd" />
+    <rdf:li resource="http://del.icio.us/tag/tutorial" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.javascripttoolbox.com/lib/table/">
+<title>Table Sorting, Filtering, Etc from JavascriptToolbox.com</title>
+<link>http://www.javascripttoolbox.com/lib/table/</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-12-24T23:12:31Z</dc:date>
+<dc:subject>javascript library table</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/javascript" />
+    <rdf:li resource="http://del.icio.us/tag/library" />
+    <rdf:li resource="http://del.icio.us/tag/table" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.onlamp.com/lpt/a/2429">
+<title>ONLamp.com: Gettext</title>
+<link>http://www.onlamp.com/lpt/a/2429</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-12-24T14:21:45Z</dc:date>
+<dc:subject>gettext i18n php</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/php" />
+    <rdf:li resource="http://del.icio.us/tag/gettext" />
+    <rdf:li resource="http://del.icio.us/tag/i18n" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.bivingsreport.com/2006/9-ways-for-newspapers-to-improve-their-websites">
+<title>9 Ways for Newspapers to Improve Their Websites » The Bivings Report</title>
+<link>http://www.bivingsreport.com/2006/9-ways-for-newspapers-to-improve-their-websites</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-12-21T18:12:02Z</dc:date>
+<dc:subject>newspapers toread</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/newspapers" />
+    <rdf:li resource="http://del.icio.us/tag/toread" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.webdesignfromscratch.com/web-2.0-design-style-guide.cfm">
+<title>Web 2.0 how-to design style guide</title>
+<link>http://www.webdesignfromscratch.com/web-2.0-design-style-guide.cfm</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-12-21T18:04:36Z</dc:date>
+<dc:subject>css design tips web2.0</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/design" />
+    <rdf:li resource="http://del.icio.us/tag/web2.0" />
+    <rdf:li resource="http://del.icio.us/tag/css" />
+    <rdf:li resource="http://del.icio.us/tag/tips" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://smashingmagazine.com/2006/12/19/50-beautiful-css-based-web-designs-in-2006">
+<title>50 Beautiful CSS-Based Web-Designs in 2006 | Smashing Magazine</title>
+<link>http://smashingmagazine.com/2006/12/19/50-beautiful-css-based-web-designs-in-2006</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-12-20T07:28:05Z</dc:date>
+<dc:subject>Gallery css design inspiration</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/css" />
+    <rdf:li resource="http://del.icio.us/tag/Gallery" />
+    <rdf:li resource="http://del.icio.us/tag/inspiration" />
+    <rdf:li resource="http://del.icio.us/tag/design" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.w3.org/Style/CSS10/hall-of-fame.html">
+<title>CSS10: Hall of Fame</title>
+<link>http://www.w3.org/Style/CSS10/hall-of-fame.html</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-12-19T21:43:45Z</dc:date>
+<dc:subject>css reference toread</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/css" />
+    <rdf:li resource="http://del.icio.us/tag/reference" />
+    <rdf:li resource="http://del.icio.us/tag/toread" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.roundedcornr.com/">
+<title>RoundedCornr: Rounded Corner and Gradient Generator</title>
+<link>http://www.roundedcornr.com/</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-12-18T06:33:59Z</dc:date>
+<dc:subject>css design web2.0</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/css" />
+    <rdf:li resource="http://del.icio.us/tag/design" />
+    <rdf:li resource="http://del.icio.us/tag/web2.0" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.javalobby.org/java/forums/t86371.html">
+<title>Is Java SE 1.6.0 Faster? ...</title>
+<link>http://www.javalobby.org/java/forums/t86371.html</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-12-16T01:16:14Z</dc:date>
+<dc:subject>java performance</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/java" />
+    <rdf:li resource="http://del.icio.us/tag/performance" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www-128.ibm.com/developerworks/aix/library/au-badunixhabits.html">
+<title>Learn 10 good UNIX usage habits</title>
+<link>http://www-128.ibm.com/developerworks/aix/library/au-badunixhabits.html</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-12-15T17:25:54Z</dc:date>
+<dc:subject>reference tutorial unix</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/unix" />
+    <rdf:li resource="http://del.icio.us/tag/tutorial" />
+    <rdf:li resource="http://del.icio.us/tag/reference" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://mutopiaproject.org/">
+<title>Welcome to the Mutopia Project</title>
+<link>http://mutopiaproject.org/</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-12-14T10:23:38Z</dc:date>
+<dc:subject>classical free music</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/free" />
+    <rdf:li resource="http://del.icio.us/tag/music" />
+    <rdf:li resource="http://del.icio.us/tag/classical" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.france24.com/france24Public/ar/nouvelles/monde.html">
+<title>France 24: ﻿أخبار العالم</title>
+<link>http://www.france24.com/france24Public/ar/nouvelles/monde.html</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-12-08T11:01:41Z</dc:date>
+<dc:subject>Arabic France News عربي</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/News" />
+    <rdf:li resource="http://del.icio.us/tag/Arabic" />
+    <rdf:li resource="http://del.icio.us/tag/%D8%B9%D8%B1%D8%A8%D9%8A" />
+    <rdf:li resource="http://del.icio.us/tag/France" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.dw-world.de/dw/0,2142,613,00.html">
+<title>الصفحة الرئيسية | Deutsche Welle</title>
+<link>http://www.dw-world.de/dw/0,2142,613,00.html</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-12-08T11:00:54Z</dc:date>
+<dc:subject>German News عربي</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/News" />
+    <rdf:li resource="http://del.icio.us/tag/%D8%B9%D8%B1%D8%A8%D9%8A" />
+    <rdf:li resource="http://del.icio.us/tag/German" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.airtightinteractive.com/simpleviewer/">
+<title>SimpleViewer Download</title>
+<link>http://www.airtightinteractive.com/simpleviewer/</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-12-06T10:51:41Z</dc:date>
+<dc:subject>Gallery flash flickr photography</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/flash" />
+    <rdf:li resource="http://del.icio.us/tag/photography" />
+    <rdf:li resource="http://del.icio.us/tag/flickr" />
+    <rdf:li resource="http://del.icio.us/tag/Gallery" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.sftpdrive.com/">
+<title>SftpDrive: The SFTP Network File System for Windows</title>
+<link>http://www.sftpdrive.com/</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-12-06T09:58:48Z</dc:date>
+<dc:subject>sftp ssh windows</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/windows" />
+    <rdf:li resource="http://del.icio.us/tag/ssh" />
+    <rdf:li resource="http://del.icio.us/tag/sftp" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://spindrop.us/2006/08/25/using-zend-search-lucene-in-a-symfony-app/">
+<title>Spindrop » Blog Archive » Using Zend Search Lucene in a symfony app</title>
+<link>http://spindrop.us/2006/08/25/using-zend-search-lucene-in-a-symfony-app/</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-11-07T20:01:33Z</dc:date>
+<dc:subject>lucene php</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/lucene" />
+    <rdf:li resource="http://del.icio.us/tag/php" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://portal.spidynamics.com/blogs/msutton/archive/2006/11/01/Top-10-Signs-You-Have-an-Insecure-Web-App.aspx#comments">
+<title>Michael Sutton's Blog : Top 10 Signs You Have an Insecure Web App</title>
+<link>http://portal.spidynamics.com/blogs/msutton/archive/2006/11/01/Top-10-Signs-You-Have-an-Insecure-Web-App.aspx#comments</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-11-07T19:58:25Z</dc:date>
+<dc:subject>security web</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/security" />
+    <rdf:li resource="http://del.icio.us/tag/web" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.flickr.com/photos/yasiraldosary/">
+<title>Yasir Aldosary @ Flickr</title>
+<link>http://www.flickr.com/photos/yasiraldosary/</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-11-06T05:01:46Z</dc:date>
+<dc:subject>flickr friend photos yasir</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/friend" />
+    <rdf:li resource="http://del.icio.us/tag/flickr" />
+    <rdf:li resource="http://del.icio.us/tag/photos" />
+    <rdf:li resource="http://del.icio.us/tag/yasir" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.yourcreditadvisor.com/blog/2006/10/102_personal_fi.html">
+<title>102 Personal Finance Tips Your Professor Never Taught You</title>
+<link>http://www.yourcreditadvisor.com/blog/2006/10/102_personal_fi.html</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-11-02T23:18:26Z</dc:date>
+<dc:subject>finance money tips</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/finance" />
+    <rdf:li resource="http://del.icio.us/tag/money" />
+    <rdf:li resource="http://del.icio.us/tag/tips" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://googleresearch.blogspot.com/2006/08/all-our-n-gram-are-belong-to-you.html">
+<title>Official Google Research Blog: All Our N-gram are Belong to You</title>
+<link>http://googleresearch.blogspot.com/2006/08/all-our-n-gram-are-belong-to-you.html</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-11-02T22:14:11Z</dc:date>
+<dc:subject>google linguistics ngram research</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/google" />
+    <rdf:li resource="http://del.icio.us/tag/research" />
+    <rdf:li resource="http://del.icio.us/tag/linguistics" />
+    <rdf:li resource="http://del.icio.us/tag/ngram" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.alistapart.com/articles/printtopreview">
+<title>A List Apart: Articles: Print to Preview</title>
+<link>http://www.alistapart.com/articles/printtopreview</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-11-01T12:20:17Z</dc:date>
+<dc:subject>css javascript print</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/print" />
+    <rdf:li resource="http://del.icio.us/tag/css" />
+    <rdf:li resource="http://del.icio.us/tag/javascript" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.omanfotoland.com/">
+<title>Abdul Al-Maimani Photography : Welcome to Omanfotoland</title>
+<link>http://www.omanfotoland.com/</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-10-24T17:34:09Z</dc:date>
+<dc:subject>arabic oman photography</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/oman" />
+    <rdf:li resource="http://del.icio.us/tag/arabic" />
+    <rdf:li resource="http://del.icio.us/tag/photography" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.dbsight.net/">
+<title>DBSight: Full-text database search platform/engine</title>
+<link>http://www.dbsight.net/</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-10-21T12:46:04Z</dc:date>
+<dc:subject>lucene search</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/search" />
+    <rdf:li resource="http://del.icio.us/tag/lucene" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://incubator.apache.org/solr/">
+<title>Welcome to Solr</title>
+<link>http://incubator.apache.org/solr/</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-10-18T12:32:26Z</dc:date>
+<dc:subject>java lucene search</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/lucene" />
+    <rdf:li resource="http://del.icio.us/tag/search" />
+    <rdf:li resource="http://del.icio.us/tag/java" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://ideoplex.com/focus/java">
+<title>Take the First Step: Java Tutorials</title>
+<link>http://ideoplex.com/focus/java</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-10-16T23:03:19Z</dc:date>
+<dc:subject>Hibernate ant java tutorial</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/java" />
+    <rdf:li resource="http://del.icio.us/tag/ant" />
+    <rdf:li resource="http://del.icio.us/tag/tutorial" />
+    <rdf:li resource="http://del.icio.us/tag/Hibernate" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.mezzoblue.com/tests/revised-image-replacement/">
+<title>mezzoblue  §  revised image replacement</title>
+<link>http://www.mezzoblue.com/tests/revised-image-replacement/</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-10-14T08:23:45Z</dc:date>
+<dc:subject>accessibility css</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/css" />
+    <rdf:li resource="http://del.icio.us/tag/accessibility" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.phptr.com/articles/article.asp?p=461633&amp;seqNum=1&amp;rl=1">
+<title>Lucene: A Tutorial Introduction to Full-Text Indexing in Java &gt; Full-Text Searching</title>
+<link>http://www.phptr.com/articles/article.asp?p=461633&amp;seqNum=1&amp;rl=1</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-10-13T21:50:31Z</dc:date>
+<dc:subject>lucene search</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/lucene" />
+    <rdf:li resource="http://del.icio.us/tag/search" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.freebsdfoundation.org/downloads/java.shtml">
+<title>FreeBSD Foundation Java Downloads</title>
+<link>http://www.freebsdfoundation.org/downloads/java.shtml</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-10-12T23:12:51Z</dc:date>
+<dc:subject>freebsd java</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/freebsd" />
+    <rdf:li resource="http://del.icio.us/tag/java" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www-128.ibm.com/developerworks/xml/library/x-simplexml.html">
+<title>SimpleXML processing with PHP</title>
+<link>http://www-128.ibm.com/developerworks/xml/library/x-simplexml.html</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-10-12T09:49:41Z</dc:date>
+<dc:subject>php simplexml toread xml</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/xml" />
+    <rdf:li resource="http://del.icio.us/tag/php" />
+    <rdf:li resource="http://del.icio.us/tag/simplexml" />
+    <rdf:li resource="http://del.icio.us/tag/toread" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.darksleep.com/lucene/">
+<title>http://www.darksleep.com/lucene/</title>
+<link>http://www.darksleep.com/lucene/</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-10-11T11:22:30Z</dc:date>
+<dc:subject>lucene tutorial</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/lucene" />
+    <rdf:li resource="http://del.icio.us/tag/tutorial" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://today.java.net/pub/a/today/2005/08/09/didyoumean.html">
+<title>java.net: Did You Mean: Lucene?</title>
+<link>http://today.java.net/pub/a/today/2005/08/09/didyoumean.html</link>
+<dc:creator>rayed</dc:creator>
+<dc:date>2006-10-11T10:12:10Z</dc:date>
+<dc:subject>lucene search</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/lucene" />
+    <rdf:li resource="http://del.icio.us/tag/search" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+</rdf:RDF>

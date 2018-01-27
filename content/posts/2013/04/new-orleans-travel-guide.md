@@ -29,7 +29,7 @@ wordpress_id: 1203
 <!--more-->
 
 عودة الى لويزيانا، كل ما اعرفه عن الولاية هو مدينة نيو اورلينز وهاتين الصورتين:
-<a href="http://www.crystalhotsauce.com/"><img src="http://rayed.com/wordpress/wp-content/uploads/2013/04/Crystal_HotSauce.jpg" alt="Crystal_HotSauce" width="145" height="200" class="alignnone size-full wp-image-1217" style="display:inline;"/></a> <a href="http://www.tabasco.com/"><img src="http://rayed.com/wordpress/wp-content/uploads/2013/04/tabasco.png" alt="tabasco" width="118" height="200" class="alignnone size-full wp-image-1218" style="display:inline;" /></a>
+<a href="http://www.crystalhotsauce.com/"><img src="/static/uploads/2013/04/Crystal_HotSauce.jpg" alt="Crystal_HotSauce" width="145" height="200" class="alignnone size-full wp-image-1217" style="display:inline;"/></a> <a href="http://www.tabasco.com/"><img src="/static/uploads/2013/04/tabasco.png" alt="tabasco" width="118" height="200" class="alignnone size-full wp-image-1218" style="display:inline;" /></a>
 
 اما عن مدينة نيو اورلينز فارتبطت لدي مع الاستعمار الفرنسي للمنطقة، وموسيقى الجاز، وعمارتها المميزة اللتي تسمى "كريول" "Creole".
 
@@ -43,7 +43,7 @@ wordpress_id: 1203
 ساحة جميلة تتوسطها حديقة رائعة التنسيق وفيها نصب للرئيس اندرو جاكسون الذي انتصر في معركة نيو اورلينز ضد القوات البريطانية ليصبح رئيسا بعدها، كما تظهر كاتدرئية ساينت لويس في خلفية الصورة.
 <a href="http://www.flickr.com/photos/rayed/7782603424/in/set-72157631067847666/"><img src="http://farm9.staticflickr.com/8429/7782603424_643d11e973.jpg" /></a>
 كما تتميز بتواجد الكثير من الرسامين والفنانين، وكذلك المطاعم والمقاهي الجميلة.
-<a href="https://rayed.com/wordpress/wp-content/uploads/2013/04/11195580_659309964213100_1531957787_n.jpg"><img src="https://rayed.com/wordpress/wp-content/uploads/2013/04/11195580_659309964213100_1531957787_n.jpg" alt="جاكسون سكوير" width="612" height="612" class="alignnone size-full wp-image-1908" srcset="https://rayed.com/wordpress/wp-content/uploads/2013/04/11195580_659309964213100_1531957787_n.jpg 612w, https://rayed.com/wordpress/wp-content/uploads/2013/04/11195580_659309964213100_1531957787_n-150x150.jpg 150w, https://rayed.com/wordpress/wp-content/uploads/2013/04/11195580_659309964213100_1531957787_n-300x300.jpg 300w" sizes="(max-width: 612px) 100vw, 612px" /></a>
+<a href="/static/uploads/2013/04/11195580_659309964213100_1531957787_n.jpg"><img src="/static/uploads/2013/04/11195580_659309964213100_1531957787_n.jpg" alt="جاكسون سكوير" width="612" height="612" class="alignnone size-full wp-image-1908" srcset="/static/uploads/2013/04/11195580_659309964213100_1531957787_n.jpg 612w, /static/uploads/2013/04/11195580_659309964213100_1531957787_n-150x150.jpg 150w, /static/uploads/2013/04/11195580_659309964213100_1531957787_n-300x300.jpg 300w" sizes="(max-width: 612px) 100vw, 612px" /></a>
 
 جلسة هادئة في احد المقاهي مع عزف حي للجاز
 <a href="http://www.flickr.com/photos/rayed/7782605100/in/set-72157631067847666"><img src="http://farm8.staticflickr.com/7140/7782605100_c982d17229.jpg"/></a>
@@ -56,7 +56,7 @@ wordpress_id: 1203
 اقدم احياء نيو اورلينز واكثرها تميزا، من ناحية العمارة والمطاعم واندية الجاز والمحلات ولحسن الحظ لم يتأثر الحي باعصار كاترينا الذي دمر اجزاء كبيرة من المدينة.
 المطاعم في هذه المنطقة لاتمل لا من ناحية الطعام ولا الجلسات.
 
-<a href="https://rayed.com/wordpress/wp-content/uploads/2013/04/11192789_1581260978815949_653563268_n.jpg"><img src="https://rayed.com/wordpress/wp-content/uploads/2013/04/11192789_1581260978815949_653563268_n.jpg" alt="" width="612" height="612" class="alignnone size-full wp-image-1909" srcset="https://rayed.com/wordpress/wp-content/uploads/2013/04/11192789_1581260978815949_653563268_n.jpg 612w, https://rayed.com/wordpress/wp-content/uploads/2013/04/11192789_1581260978815949_653563268_n-150x150.jpg 150w, https://rayed.com/wordpress/wp-content/uploads/2013/04/11192789_1581260978815949_653563268_n-300x300.jpg 300w" sizes="(max-width: 612px) 100vw, 612px" /></a>
+<a href="/static/uploads/2013/04/11192789_1581260978815949_653563268_n.jpg"><img src="/static/uploads/2013/04/11192789_1581260978815949_653563268_n.jpg" alt="" width="612" height="612" class="alignnone size-full wp-image-1909" srcset="/static/uploads/2013/04/11192789_1581260978815949_653563268_n.jpg 612w, /static/uploads/2013/04/11192789_1581260978815949_653563268_n-150x150.jpg 150w, /static/uploads/2013/04/11192789_1581260978815949_653563268_n-300x300.jpg 300w" sizes="(max-width: 612px) 100vw, 612px" /></a>
 
 <a href="http://en.wikipedia.org/wiki/Bourbon_Street">شارع بوربن Bourbon Street</a>
 شارع في منتصف الحي الفرنسي في المدينة، تكثر فيها المطاعم والبارات وهو شارع الاحتفالات في المدينة، لذا انصح بزيارته نهاراً لكثرة السكارى في الليل.
@@ -81,7 +81,7 @@ wordpress_id: 1203
 <a href="http://www.neworleansonline.com/neworleans/tours/swamptours.html">المستنقعات</a>
 لا تفوت زيارة مستنقعات لويزيانا الشهيرة حيث تقوم برحلة بالقوارب ذات المراوح لزيارة المستنقعات الغامضة والمثيرة ومراقبة التماسيح.
 
-<a href="https://rayed.com/wordpress/wp-content/uploads/2013/04/11189835_1394210280904833_266856180_n.jpg"><img src="https://rayed.com/wordpress/wp-content/uploads/2013/04/11189835_1394210280904833_266856180_n.jpg" alt="11189835_1394210280904833_266856180_n" width="612" height="612" class="alignnone size-full wp-image-1910" srcset="https://rayed.com/wordpress/wp-content/uploads/2013/04/11189835_1394210280904833_266856180_n.jpg 612w, https://rayed.com/wordpress/wp-content/uploads/2013/04/11189835_1394210280904833_266856180_n-150x150.jpg 150w, https://rayed.com/wordpress/wp-content/uploads/2013/04/11189835_1394210280904833_266856180_n-300x300.jpg 300w" sizes="(max-width: 612px) 100vw, 612px" /></a>
+<a href="/static/uploads/2013/04/11189835_1394210280904833_266856180_n.jpg"><img src="/static/uploads/2013/04/11189835_1394210280904833_266856180_n.jpg" alt="11189835_1394210280904833_266856180_n" width="612" height="612" class="alignnone size-full wp-image-1910" srcset="/static/uploads/2013/04/11189835_1394210280904833_266856180_n.jpg 612w, /static/uploads/2013/04/11189835_1394210280904833_266856180_n-150x150.jpg 150w, /static/uploads/2013/04/11189835_1394210280904833_266856180_n-300x300.jpg 300w" sizes="(max-width: 612px) 100vw, 612px" /></a>
 
 <!-- <a href="http://www.flickr.com/photos/rayed/7782623850/in/set-72157631067847666"><img src="http://farm9.staticflickr.com/8446/7782623850_4dd9d21c02.jpg" /> -->
 

@@ -11,8 +11,13 @@ tags:
 wordpress_id: 461
 
 ---
-<p><img src="http://rayed.com/wordpress/wp-content/uploads/2008/02/freebsd-logo.png" align="right" alt="FreeBSD" /><br />
-FreeBSD my favorite OS, has an official web based discussion forum:<br />
-<a href="http://forums.freebsd.org/">http://forums.freebsd.org/</a><br />
-Congratulations, an good job.</p>
-<p>It seems to me FreeBSD is getting easier everyday.</p>
+<img src="/static/uploads/2008/02/freebsd-logo.png" align="right" alt="FreeBSD" />
+
+FreeBSD my favorite OS, has an official web based discussion forum:
+
+http://forums.freebsd.org/
+
+Congratulations, an good job.
+
+It seems to me FreeBSD is getting easier everyday.
+

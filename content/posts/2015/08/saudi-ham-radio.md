@@ -68,7 +68,7 @@ wordpress_id: 1829
 </li>
 </ul>
 <p>مقارنة الرسوم مع دول اخرى:<br />
-<a href="http://rayed.com/wordpress/wp-content/uploads/2015/08/Screen-Shot-2015-08-30-at-11.22.14-AM.png"><img src="http://rayed.com/wordpress/wp-content/uploads/2015/08/Screen-Shot-2015-08-30-at-11.22.14-AM.png" alt="Screen Shot 2015-08-30 at 11.22.14 AM" width="717" height="265" class="alignnone size-full wp-image-1830" srcset="https://rayed.com/wordpress/wp-content/uploads/2015/08/Screen-Shot-2015-08-30-at-11.22.14-AM.png 717w, https://rayed.com/wordpress/wp-content/uploads/2015/08/Screen-Shot-2015-08-30-at-11.22.14-AM-300x111.png 300w" sizes="(max-width: 717px) 100vw, 717px" /></a></p>
+<a href="/static/uploads/2015/08/Screen-Shot-2015-08-30-at-11.22.14-AM.png"><img src="/static/uploads/2015/08/Screen-Shot-2015-08-30-at-11.22.14-AM.png" alt="Screen Shot 2015-08-30 at 11.22.14 AM" width="717" height="265" class="alignnone size-full wp-image-1830" srcset="/static/uploads/2015/08/Screen-Shot-2015-08-30-at-11.22.14-AM.png 717w, /static/uploads/2015/08/Screen-Shot-2015-08-30-at-11.22.14-AM-300x111.png 300w" sizes="(max-width: 717px) 100vw, 717px" /></a></p>
 <p>المصدر:<br />
 <a href="https://www.reddit.com/r/amateurradio/comments/31q39i/amateur_radio_fees_in_your_country/">https://www.reddit.com/r/amateurradio/comments/31q39i/amateur_radio_fees_in_your_country/</a></p>
 <p>ارجوا ان تلقى هذه الاقتراحات الاستحسان والقبول.</p>

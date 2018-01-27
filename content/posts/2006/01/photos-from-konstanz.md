@@ -8,6 +8,9 @@ categories:
 wordpress_id: 190
 
 ---
-<p>Here are two photos I took today when visiting <a href="http://www.konstanz.de/">Konstanz</a>, I forgot my Canon camera so I took these photos with my Nokia phone, surprisingly they look good. Click to enlarge.<br />
-<a href="/wordpress/wp-content/upload/Image054.jpg"><img src="/wordpress/wp-content/upload/thumb-Image054.jpg" /></a></p>
-<p><a href="/wordpress/wp-content/upload/Image058.jpg"><img src="/wordpress/wp-content/upload/thumb-Image058.jpg" /></a></p>
+Here are two photos I took today when visiting <a href="http://www.konstanz.de/">Konstanz</a>, I forgot my Canon camera so I took these photos with my Nokia phone, surprisingly they look good. Click to enlarge.
+
+<a href="/static/uploads/old/Image054.jpg"><img src="/static/uploads/old/thumb-Image054.jpg" /></a>
+
+<a href="/static/uploads/old/Image058.jpg"><img src="/static/uploads/old/thumb-Image058.jpg" /></a>
+

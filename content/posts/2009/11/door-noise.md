@@ -7,7 +7,9 @@ wp_direction:
   - rtl
 categories:
   - Uncategorized
+tags: [arabic]  
 wordpress_id: 711
 
 ---
-<p><a href="http://twitpic.com/pbmqm" ><img src="http://twitpic.com/show/thumb/pbmqm.jpg" width="150" height="150" alt=""/></a></p>
+<a href="http://twitpic.com/pbmqm" ><img src="http://twitpic.com/show/thumb/pbmqm.jpg" width="150" height="150" alt=""/></a>
+

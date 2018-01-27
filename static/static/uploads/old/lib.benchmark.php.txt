@@ -1,0 +1,23 @@
+<?php
+
+  $benchmark_times=array();
+
+  // =================================
+  function getmicrotime() { 
+    list($usec, $sec) = explode(" ", microtime()); 
+    return ((float)$usec + (float)$sec); 
+  }
+
+  // =================================
+  function benchmark_start($name) {
+    global $benchmark_times;
+    $benchmark_times[$name]=getmicrotime();
+  }  
+    
+  // =================================
+  function benchmark_end($name) {
+    global $benchmark_times;
+    return getmicrotime()-$benchmark_times[$name];
+  }  
+    
+?>

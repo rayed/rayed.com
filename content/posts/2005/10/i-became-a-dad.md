@@ -8,7 +8,11 @@ categories:
 wordpress_id: 153
 
 ---
-<p>For a very beautiful boy.</p>
-<p><font size="5">Say Mashallah</font></p>
-<p><b>UPDATE:</b> I named him Abdullah 🙂<br />
-<a href='http://rayed.com/wordpress/wp-content/upload/babyboy.jpg'><img src='http://rayed.com/wordpress/wp-content/upload/babyboy_s.jpg' alt='' /></a></p>
+For a very beautiful boy.
+
+**Say Mashallah**
+
+**UPDATE:** I named him Abdullah 🙂
+
+<a href='/static/uploads/old/babyboy.jpg'><img src='/static/uploads/old/babyboy_s.jpg' alt='' /></a>
+

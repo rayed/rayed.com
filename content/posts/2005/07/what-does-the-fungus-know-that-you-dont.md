@@ -8,5 +8,6 @@ categories:
 wordpress_id: 131
 
 ---
-<p><a href="http://blog.stayfreemagazine.org/2005/06/mcdonalds_exper.html">Even fungus couldn&#8217;t eat McDonald&#8217;s Food</a><br />
-<img src='http://rayed.com/wordpress/wp-content/upload/fries25.jpg' alt='' /></p>
+<a href="http://blog.stayfreemagazine.org/2005/06/mcdonalds_exper.html">Even fungus couldn't eat McDonald's Food</a>
+
+<img src='/static/uploads/old/fries25.jpg' alt='' />

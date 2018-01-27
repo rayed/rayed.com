@@ -14,7 +14,8 @@ tags:
 wordpress_id: 952
 
 ---
-<p>I create small Django app and tried to benchmark it with different backends, here is the result:</p>
+I create small Django app and tried to benchmark it with different backends, here is the result:
+
 <table>
 <tr>
 <th>Backend</th>
@@ -33,5 +34,6 @@ wordpress_id: 952
 <td>127.61</td>
 </tr>
 </table>
-<p>The test performed using &#8220;ab&#8221; tool, 1000 requests with 5 concurrent clients:<br />
-<code>$ ab -c 5 -n 1000 http://localhost/test</code></p>
+The test performed using "ab" tool, 1000 requests with 5 concurrent clients:
+`$ ab -c 5 -n 1000 http://localhost/test`
+

@@ -1,0 +1,1437 @@
+<pre>
+
+<a href=#1>1</a>
+<a href=#2>2 OpenBoot</a>
+<a href=#3>3 Installation</a>
+<a href=#4>4 Initalization & Shutdown</a>
+<a href=#5>5 User Administration</a>
+<a href=#6>6 File security</a>
+<a href=#8>8 File Systems</a>
+<a href=#11>11 Configuring Disks</a>
+<a href=#12>12 Format</a>
+<a href=#13>13 Backup & Recovery</a>
+<a href=#14>14 </a>
+<a href=#15>15 VI</a>
+<a href=#16>16 Remote Connection</a>
+<a href=#17>17 Client Server</a>
+<a href=#18>18 Network enviroumnet</a>
+<a href=#19>19 Syslog</a>
+<a href=#20>20 Disk Management</a>
+<a href=#21>21 Pseudo FS & Swap space</a>
+<a href=#22>22 NFS</a>
+<a href=#23>23 Auto FS</a>
+<a href=#24>24 Cache FS</a>
+<a href=#25>25 Naming Service</a>
+<a href=#26>26 NIS</a>
+<a href=#27>27 Role-Based Access Control (RBAC)</a>
+<a href=#28>28 Solaris Managment Console (SMS) & Solstice AdminSuite</a>
+<a href=#29>29 JumpStart</a>
+
+<hr>
+
+==========================================
+<a name=1></a>
+ CHAPTER 1
+==========================================
+
+ # echo $SHELL
+
+------------------------------------------
+
+ # passwd -e rayed	# change shell for user rayed
+
+------------------------------------------
+
+Sun comes with these shells:
+
+ * /bin/sh Bourne $
+	/etc/profile
+	~/.profile
+
+ * /bin/ksh Korne $
+	/etc/profile
+	~/.profile
+	~/.kshrc
+
+ * /bin/csh C %
+	/etc/.login
+	~/.login
+	~/.cshrc
+
+------------------------------------------
+
+Kernel files can be found in:
+ * /kernel
+ * /platform/&lt;platform name>/kernel
+ * /platform/&lt;hardware-class-name>/kernel
+ * /usr/kernel
+
+------------------------------------------
+
+MAN options
+
+ # man -k keyword
+ # man -M &lt;path-to-man-file> command
+ # man -a command	# shows all man pages with that name
+ # man -f command	# shows a summary for all command with that name
+ # man -s section command
+
+
+
+
+==========================================
+<a name=2></a>
+ CHAPTER 2 OpenBoot
+==========================================
+ 
+
+ OpenBoot commands
+ STOP+A		Aborts Soalris and go to OpenBoot "ok" prompt  ( "# shutdown -i 0 -g 0 -y" is much better)
+ STOP		Bypass POST
+ STOP+D		Enter Diagnostic mode
+ STOP+N		Reset NVRAM contents to default values
+
+------------------------------------------
+
+ OpenBoot commands
+
+ ok banner		# show system information
+ ok help		# show help
+ ok help diag		# show help for the category diag
+ ok help sync		# show help for the command sync
+ ok go			# continue operation of Soalris OS (from OpenBoot to Solaris)
+ ok sync		# Synchronize disk data
+ ok reboot		# reboot!
+ ok boot		# boot Soalris system
+ ok boot -v		# ... verbose
+ ok boot -a		# ... interactive boot
+ ok boot -s		# ... single user
+ ok boot -r		# ... reconfigure i.e. rescan devices
+
+
+------------------------------------------
+
+ Manipulate OpenBoot variables
+
+ ok printenv			# Display enviroument variables
+ ok setenv &lt;var> <value>	# Set variable to value
+
+------------------------------------------
+
+ OpenBoot variables
+
+ - variable ending with "?" are boolean variables, accept either "true" or "false"
+ - you can view the OpenBoot variable value using the solaris command:
+	# eeprom parameter 
+ - and set them using the same command
+	# eeprom parameter value
+	
+ - Some popular commands
+
+ ok set-defaults			# Set default values
+ ok set-default parameter		# set default value for givven parameter
+ ok setenv auto-boot? true		# Load Soalris directly
+ ok setenv auto-boot? false		# stop loading to OpenBoot prompt "ok" to load Solaris use "boot"
+
+ ok setenv boot-device disk		# Boot solaris from disk
+ ok setenv boot-device net		# Network
+ ok setenv boot-device cdrom		# CD-ROM
+
+ ok nvalias mydisk /pci@1f,0		# create an alias for device with the name "mydisk"
+ ok nvunalias mydisk			# remove alias
+
+ ok show-disk				# view disk aliases
+ ok .properies				# view disk aliases
+
+ - to navigate device try you can use "cd" and "ls"
+
+
+
+
+
+
+
+==========================================
+<a name=3></a>
+ CHAPTER 3 Installation
+==========================================
+ 
+ Soalris installation media
+ 1- installation CD
+ 2- software 1
+ 3- software 2
+ 4- documentation
+
+ Platform Edition
+ - Sparc (Scalable Processor ARChitecture)
+ - Intel/x86
+
+ Enligsh Edition
+ International Edition:
+ - Multilingual installation CD
+ - Language CD
+ - International documentaion CD
+
+ Hardware release: contains new drivers
+
+------------------------------------------
+
+ Installation options:
+ 1- interactive: GUI
+ 2- Web Start: Java GUI
+ 3- Network: installation server
+ 4- Defualt Jumpstart
+ 5- Custom JumpStart
+
+------------------------------------------
+
+ Software
+ - Package:
+	pkginfo: package title+purpose+version+etc..
+	pkgmap: name+location+size+permission of all files in the package.
+	preinstall: Preinstall script what to install and where
+	&lt;package files>
+	Uninstall script
+ - Cluster: 
+	Several related packages, CDE
+ - Group:
+	Core
+	End user
+	Develeoper
+	Entire distrbution
+	Entire distrbution+OEM (Extra drivers)
+
+------------------------------------------
+
+ Package admin commands:
+
+ /var/sadm/install/contents
+	is a file that contains all files installed using package admin commands
+
+
+
+ # pkgadd SUNWdoc			# install the package SUNwdoc found in default location "/var/spool/pkg"
+ # pkgadd -n SUNWdoc			# "-n"  non-interactive
+ # pkgadd -d /tmp   SUNWdoc		# install the package SUNwdoc found in "/tmp"
+ # pkgadd -d /tmp/SUNWdoc_pkg		# install the packages in the file "/tmp/SUNWdoc_pkg"
+ # pkgadd -a file1.txt SUNWdoc		# "-a" use file1.txt as adminstrative file it answer all questions of pkgadd
+ # pkgadd -r file2.txt SUNWdoc		# "-r" use file2.txt as adminstrative file it answer all questions of the
+					# 	package install script
+ # pkgadd -s /var/mypackages SUNWdoc	# don't install package just copy it to spool
+
+
+
+ # pkginfo				# show all isntalled packages
+ # pkginfo SUNWdoc			# view package CATEGORY + INSTANCE + NAME
+ # pkginfo -q SUNWdoc			# return 0 if package installed, 1 if not (used in scripts)
+ # pkginfo -x SUNWdoc			# view package INSTANCE + NAME + VERSION
+ # pkginfo -l SUNWdoc			# More detailed report about the package
+ # pkginfo -d /tmp/SUNWdoc_pkg		# Show information about UNINSTALLED package
+
+
+
+ # pkgchk SUNWdoc			# Check the installation of the package
+ # pkgchk -f SUNWdoc			# ... and fix file attribute problems
+ # pkgchk -p /etc/passwd		# check file with origrnal package installation
+ # pkgchk -l -p /etc/passwd		# ... and view detailed info about it
+
+
+
+ # pkgrm SUNWdoc			# Remove installed package
+ # pkgrm -n SUNWdoc			# Non-interative
+ # pkgrm -v SUNWdoc			# Verbose
+ # pkgrm -A SUNWdoc			# Remove shared files
+ # pkgrm -a fiel1.txt SUNWdoc		# Remove and use file for answer to questions
+ 
+
+
+------------------------------------------
+
+ Patches
+ - Recommened: most be installed to correct OS
+ - Security: inhance system security
+ - Product specific: software or harware specific patch
+
+ find them at sunsolve.sun.com 
+
+ Soalris8.PatchReport: report for recommened patches
+ Soalris8_Recommended.zip: cluster of all recommened patches
+ Soalris8_Recommended.README: how to install the cluster
+
+
+ Patch is a directory that include the following files (e.g. 108528-06):
+ - README.108528-06
+ - Packages
+ - &lt;installpatch> &lt;backoutpatch> script to install and remove the patch
+ - Other optional files
+  
+ Installing a patch:
+
+ # /usr/bin/unzip 108528-06.zip
+or
+ # /usr/bin/zcat 108528-06.tar.Z | tar -xvf -
+
+
+
+
+ Patch commands
+
+ # patchadd -p				# show all installed patches (same as showrev -p)
+ # patchadd /var/tmp/108528-06		# install the patch 
+ # patchadd -d /var/tmp/108528-06	# ... but don't keep a copy of orig files in "/var/sadm/patch"
+					#	Patch backout won't work if you did it
+ # patchadd -u /var/tmp/108528-06	# ... replace file without asking (Unconditional replace)
+ # patchadd -B /mybackup/patch /var/tmp/108528-06
+					# ... orig files goes to "/mybackup/patch" isntead of "/var/sadm/patch"
+ # patchadd -M /var/tmp			# install all patches in directory
+
+
+
+ # patchrm 108528-06			# remove patch
+ # patchrm -f 108528-06			# force
+ # patchrm -B /mybackup/patch 108528-06	# use "/mybackup/patch" to get old original files
+
+
+ # showrev -p				# same as "patchadd -p"
+ # showrev -w				# OpenWindows version
+ # showrev -a				# All information showrev knows
+
+
+
+
+
+
+==========================================
+<a name=4></a>
+ CHAPTER 4 Initalization & Shutdown
+==========================================
+
+Booting Process
+ 1- Boot PROM phase
+	POST (power-on self-test)  scan - diagnostic - build device tree
+	banner
+	run boot program
+ 2- Boot programs phase
+	load ufsboot and execute it
+	&lt;ufsboot> load the kernel
+	(installboot used to install new booblock if needed)
+ 3- Kernal phase
+	&lt;genunix> platform-indepedent
+	&lt;unix> platform-depedent
+	kernel use ufsboot to locate and load needed modules
+	kernel files located in either:
+		/platform/ARCH/kernel 
+		/platform/ARCH/kernel/sparcv9 (64-bit machines)
+	Modules located:
+		/kernel
+		/usr/kernel
+		/platform/ARCH/kernel
+		/platform/MODEL/kernel
+	kernel read &lt;/etc/system> to configure it self
+ 4- init phase
+	/etc/inittab	control file for init process	(initdefault for default run-level)
+
+	0	PROM OpenBoot
+	S or s	Single user
+	1	Single user more file system mounted
+	2	Multiuser
+	3	Multiuser with NFS
+	4	unused
+	5	Shutdown + poweroff
+	6	Reboot
+
+	/sbin/rc#	Script	
+	/etc/init.d/
+	/etc/rc#.d/
+
+------------------------------------------
+
+
+  Changing run levels
+
+
+  # init 6			# change init run level
+  # telinit 6			# change init run level
+
+  # shutdown -i 6 -g 0 -y	# message, grace period, confirmation
+  # halt			# OpenBoot (No rc scripts run, not good)	shutdown -i 0 -g 0 -y
+  # reboot			# Reboot (No rc scripts run, not good)		shutdown -i 6 -g 0 -y
+  # poweroff			# Power Off (No rc scripts run, not good)	shutdown -i 5 -g 0 -y
+
+
+
+
+
+
+
+==========================================
+<a name=5></a>
+ CHAPTER 5 User Administration
+==========================================
+
+ /var/adm/loginlog	if exist log login attempts
+
+ in file "/etc/default/login"
+	CONSOLE=/dev/console		root can login in from console only
+	#CONSOLE=/dev/console		root can login from any where
+	CONSOLE=			root can NOT login directly
+
+ in file "/etc/default/su"
+	SULOG=/var/adm/sulog		Log all "su" attempts
+
+ # passwd -s rayed
+ rayed	PS				# have password
+ rayed	LK				# locked account
+ rayed	NP				# No Password
+
+
+ in "/etc/default/passwd"
+	MAXWEEKS	Maximum time  period  that  password  is valid.
+	MINWEEKS	Minimum time period before the  password can be changed.
+	PASSLENGTH	Minimum length of password,  in  characters.
+	WARNWEEKS	Time period until  warning  of  date  of password's ensuing expiration.
+
+
+ # passwd -r files	# Change user info in files
+ # passwd -r nis	# ... nis
+ # passwd -r nisplus	# ... nisplus
+
+------------------------------------------
+
+ # w			# who logged in now
+ # w -h			# no headers
+ # w -l			# long
+ # w -s			# short
+ 
+
+ # who			# who logged in now
+ # who -b		# boot time
+ # who -q		# names & # of user logged in now
+
+------------------------------------------
+
+ &lt;useradd> syntax
+
+ -c comment
+ -d dir
+ -e expire
+ -f inactive
+ -g group
+ -G groups, ...		# secondary groups
+ -m			# create home (-k skel_dir: template of the new home dir)
+ -u uid
+ -o			# allow duplicate UID
+ -s shell
+
+ &lt;usermod> syntax same as <useradd> plus < -l new_name >
+
+ # userdel user
+ # userdel -r user		# delete user and his home dir
+
+------------------------------------------
+
+ # groupadd group
+ # groupadd -g gid group	# create new group with ID gid
+ # groupadd -g gid -o group	# allow duplicate gid
+
+ &lt;groupmod> syntax same as <groupadd> plus < -n new_name >
+
+ # groupdel
+
+
+
+
+
+
+
+==========================================
+<a name=6></a>
+ CHAPTER 6  File security
+==========================================
+
+ # grep word *			# show file name and line
+ # grep -l word *		# show file name only
+ # grep -n word *		# show line number where word appear
+ # grep -c word file		# show how many line have word
+ # grep -v word file		# show lines WITHOUT word
+ # grep -i word file		# case insenstive
+ # grep -w word file		# search for complete "word" no prefix or suffix
+
+
+------------------------------------------
+
+ # ls -d dir			# display the directory not its content
+ # ls -i 			# print inode
+ # ls -n			# show user id and group id as numbers
+ # ls -b			# nonprintable as octal \ddd
+ # ls -q			# nonprintable as ?
+ # ls -r			# revers sorting
+ # ls -tl			# sort by modifcation time
+ # ls -R			# recursive
+
+------------------------------------------
+
+ 04000		setuid
+ 02000		setgid
+ 01000		sticky bit
+
+------------------------------------------
+
+ # getfacl [-ad] file
+	-a	show acl of file
+	-d	show default acl
+
+ # setfacl
+	-s	set new acl deleting old ones
+	-m	add new acl s
+	-d	delete acl
+	-f file	set acl from file
+
+ # getfacl file1 | setfacl -f - file2		# this will copy acl of file1 to file2
+
+
+
+
+
+
+
+==========================================
+<a name=8></a>
+ CHAPTER 8  File Systems
+==========================================
+
+ # fdformat
+ -v	# verify
+ -U	# Unmount it first
+ -D	# use 740 instead of 1.44
+ -e	# Eject after finish if possiple
+ -f	# force
+ -b	# label
+
+
+ # volcheck -v		# find disks
+
+ # volrmmount -i floppy0	# mount floppy
+ # volrmmount -e floppy0	# UNmount floppy
+
+
+
+==========================================
+<a name=11></a>
+ CHAPTER 11  Configuring Disks
+==========================================
+
+rdsk commands
+	newfs, fsck, ufsdump, installboot
+dsk  commands
+	mount
+
+------------------------------------------
+
+ # newfs /dev/rdsk/device	# create FS on disk
+ # newfs -N /dev/rdsk/device	# show FS information
+
+------------------------------------------
+
+ After adding new disk to the systems:
+ 1- reboot using "boot -r" then "ok probe-scsi-all"
+ 2- "touch /reconfigure" reboot
+ 3- Use devfsadm
+
+ # devfsadm -v -c disk		# look for new disks
+ -c class			# device class to search (disk, tape, port, audio, psedu)
+ -v				# print change to /dev /devices
+ -C				# cleanp mode
+ -s				# don't change /dev or /devices used with -v to see what will cahnge
+ 
+
+
+==========================================
+<a name=12></a>
+ CHAPTER 12  Format
+==========================================
+
+ # format
+ -d &lt;disk-name>
+ -f &lt;command-file>	# automate formating
+ -l &lt;log-file>
+ -s			# suppress normal message ( good with automation with -f )
+ -m			# More detailed messages
+ -M			# Diag messages
+
+ Format menu commands:
+ disk			# to select a disk
+ type			# define disk type (interface, geom, speed)
+ partition		# Partition sub menu
+	print		#
+	modify		#
+	label		# save par table on disk
+ current		# show selected disk (pwd for disks :) 
+ format			# LOW level format
+ repair			# repair SPECIFC sector
+ label			# write VTOC, save changes (IMPORTANT)
+ analyze		# analyze sub menu
+ defect			# defect list management
+ backup			# restore VTOC from backup
+ verify			# show VTOC content
+ save			# store current disk specification & partition table to "/etc/format.dat"
+ inquery		# show information about the disk
+ volname		# give a name to the disk
+
+
+
+
+
+==========================================
+<a name=13></a>
+ CHAPTER 13  Backup & Recovery
+==========================================
+
+ # ufsdump 0uv /dev/rdsk/c0t0d0c6	# dump Slice 6 to tape "/dev/rmt/0" (notice ROW rdsk not dsk)
+ 0					# Level 0 (full backup)
+ u					# update (/etc/dumpdates)
+ v					# Verfiy
+ f &lt;dump-destnation>			# Change default destnation
+ -S					# Estimate size in bytes (NO DUMP)
+
+
+ # ufsrestore -i			# Interactive restore ( cd, ls, add &lt;file>, extract, quit)
+ # ufsrestore -x			# full restore (eXtract)
+ # ufsrestore -x /opt/install		# restore (eXtract) on file (directory)
+ # ufsrestore -tf &lt;dump-file>		# restore from
+ -t					# list archive
+ -r					# Recursive (used for new file system)
+ -R					# Resume (if dump took more than on file)
+
+------------------------------------------
+
+ # ls | cpio -oc > arch.backup
+ -o				# copy out (create archive)
+	-c			# ASCII output (unix compatability)
+
+ # cpio -itcv *.txt &lt; arch.backup
+ -i				# copy in  (extract archive)
+	-t			# list Table of content of arch
+	-v			# "ls -l" output
+	-d			# create needed Directories
+
+------------------------------------------
+
+ # dd &lt; /floppy.img > /dev/fd0
+ # dd if=/floppy.img of=/dev/fd0
+
+ Useful for cloning disks
+
+------------------------------------------
+
+ Step to restore FS
+
+ ok boot cdrom -s
+ # format
+ # newfs /dev/rdsk/device
+ # mount /dev/rdsk/device /mnt
+ # cd /mnt
+ # ufsrestore rvf /dev/rmt/0
+ # rm restoresymtable
+ # cd /
+ # umount /mnt
+ # installboot /usr/platform/`uname -a`/lib/fs/ufs/pboot /usr/platform/`uname -a`/lib/fs/ufs/bootblk /dev/rdsk/device
+ # fsck /dev/rdsk/deivce
+ # reboot
+
+
+
+
+==========================================
+<a name=14></a>
+ CHAPTER 14  
+==========================================
+
+Nothing 
+
+==========================================
+<a name=15></a>
+ CHAPTER 15  VI
+==========================================
+
+ZZ			:wq
+G			:$
+18G			:18
+:1,$ s/worn/another/	:%s/word/another/
+
+cw			# change word
+c$			# change to the end of line
+cc			# change current line
+
+( )			# go to begin or end of sentence
+{ }			# go to begin or end of paragraph
+
+?			# backword search
+
+
+==========================================
+<a name=16></a>
+ CHAPTER 16 Remote Connection
+==========================================
+
+ # rlogin -l rayed www.rayed.com
+ -8				use 8 bit
+
+ &lt;/etc/host.equiv> host access
+ earth.foo.com			# grant
+ +sun.foo.com			# grant
+ -mars.foo.com			# denie
+
+ &lt;$HOME/.rhosts> per user access
+ earth.foo.com	kevin		# grant kevin from earth
+ sun.foo.com			# grant me from sun
+ +				# grant me from any host
+ +	+			# grant any one from any where
+
+
+ # rsh -n www.rayed.com date		# -n (no output; redirect to /dev/null)
+ # rsh -l rayed www.rayed.com date	# -l rayed (using rayed as user name)
+
+
+ # rcp file host:file		# local  to remote
+ # rcp host:file file		# remote to local
+ # rcp host:file host:file	# remote to remote
+ -p				# preserve acl
+ -r				# recursive
+
+
+
+  FTP
+
+  &lt;/etc/ftpusers>
+  Users in this file CAN NOT use FTP
+
+  &lt;/etc/shells>
+  the user shell most be in this file
+
+  -T 12		# Timeout
+  -d		# debug
+  -g		# no regexp on files
+  -i		# no interactive ( same as prompt in ftp command line)
+
+
+ 
+==========================================
+<a name=17></a>
+ CHAPTER 17 Client Server
+==========================================
+
+Server Types:
+1- Action: Jump Start, Backup
+2- Application: Database, StartOffice server
+3- Cache-only: cache DNS, HTTP cache server
+4- Communication: gateway, router
+5- Print
+6- Session: NFS server exporting HOME dir
+7- X-Server
+
+
+Clients Types:
+1- Dataless: / swap Local disk, home NFS
+2- Diskful: / swap Remote, home local
+3- Diskless: no disk at all
+
+
+
+
+
+==========================================
+<a name=18></a>
+ CHAPTER 18 Network enviroumnet
+==========================================
+
+OSI					TCP/IP
+-------------------------------------------
+Application			Application
+Presentation		Application 
+Session				Application
+Transport			Transport		TCP UDP
+Network				Internet		IP ICMP ARP RARP
+Datalink			Network Interface
+Physical			Hardware
+
+
+
+# cat /etc/hostname.hme0
+rayed
+#
+# cat /etc/hosts
+127.0.0.1		localhost
+212.118.136.7	rayed	rayed.saudi.net.sa
+#
+# cat /etc/netmasks
+212.118.136.7	255.255.255.0
+#
+# cat /etc/defaultrouter
+212.118.136.1
+
+
+
+
+Ethernet frame
+
+8		Preamble	
+6		Destination Address (MAC)
+6		Source Address (MAC)
+2		Type (IP ICMP ARP RARP)
+46-1500	Data
+4		CRC (check)
+
+
+
+
+
+ARP commands
+
+ # arp -a				# print ARP table
+ # arp 212.118.136.7	# print MAC for IP
+ # arp -d 64.10.20.1	# delete ARP for IP
+ # arp -s 64.10.20.1 08:00:20:35:f3:4a 		# permanently add ARP entry
+ # arp -s 64.10.20.1 08:00:20:35:f3:4a temp # temporary
+ # arp -s 64.10.20.1 08:00:20:35:f3:4a pub	# publish
+ # arp -f file			# load ARP from file
+
+
+
+
+Reverse ARP
+Used to tell a new machine about its IP
+
+ # /usr/sbin/in.rarpd
+
+ # cat /etc/ethers
+ 08:00:20:35:f3:4a	rayed
+
+ # cat /etc/hosts
+ 212.118.136.7		rayed
+
+
+
+Ifconfig
+ /etc/rcS.d/S30network.sh	# start the network
+
+ # ifconfig -a				# show all interfaces
+ # ifconfig hme0			# show interface hme0
+ # ifconfig hme0 212.118.136.7 netmask 255.255.255.0 up plump
+ up			# use this interface 
+ plumb		# open interface device (if interface not visible to ifconfig)
+
+ # netstat -i				# show interfaces (MTU in out errors collision)
+
+
+
+
+Remote Procedure Call (RPC)
+
+rpcbind runs on port 111, and it give the port RPC program running on
+based on RPC program number:
+ # cat /etc/rpc
+ rpcbind         100000  portmap sunrpc rpcbind
+ rstatd          100001  rstat rup perfmeter
+ rusersd         100002  rusers
+
+ # /etc/rc2.d/S71rpc start		# start rpcbind
+
+
+ # rpcinfo -p host				# show RPC services running on host
+ # rpcinfo -u host srv_name		# show RPC service info running on host
+ # rpcinfo -b srvnam 10			# broadcast to check who run srvnam vresion 10
+
+ # rpcinfo -d srvnam 10			# Unregister srvnam version 10
+
+
+
+
+
+
+==========================================
+<a name=19></a>
+ CHAPTER 19 Syslog
+==========================================
+
+1- Syslogd Daemon
+2- Syslog() API
+3- "logger" command
+
+Default log file "/var/adm/messages"
+
+Configuration file "/etc/syslog.conf":
+	facility.level[;facility.level]		action
+
+Facility:
+	user		generated from user proccess
+	kern
+	mail
+	daemon		System daemons, such as in.ftpd & in.telnetd
+	auth		loggin, su, getty
+	lpr
+	news
+	uucp
+	cron		cron, at
+	local0-7	Local use
+	mark		Internal use only
+
+Level:
+	emerg		panic
+	alter		correct immediately
+	crit
+	error
+	warning
+	notice
+	info
+	debug
+	none		Don't send any message for facility
+
+Action:
+	/path-to/file	file
+	@host			remote host
+	user[,user]		user (if they logged)
+	*				all users
+
+ # logger "hi there"		# add entries to system log
+ -i							# log PID
+ -p facility.level			# use different priority (default user.notice)
+ -f file					# use content of file as log
+ -t "tag"					# put a tag on message
+
+
+
+
+
+
+
+==========================================
+<a name=20></a>
+ CHAPTER 20 Disk Management
+==========================================
+
+virtual or logical disk = one or more physical disk
+
+/dev/dsk/c0t0d0s0			Physical disk
+/dev/vx/dsk/rootdg/vol01	Virtual disk
+
+/dev/vx/dsk/{volume-group}/{volume-name}
+
+VDM virtual disk management
+LVM Logical volume management
+
+Benfits:
+1- Concatenation: span on two disks (larger)
+2- Stripping: write on 2 disk at same time (larger & faster)
+3- Mirroring: write same data in t disk (protection)
+4- RAID:
+	- RAID 0 stripping or concatenation (low integrity, no redundancy)
+	- RAID 1 mirroring
+	- RAID 0+1 stripping+mirroring
+	- RAID 5 
+
+
+Solstice DiskSuit (SDS)
+
+- metadevices (virtual disks)
+- /dev/md/dsk/dnn
+- concatenate, mirror, RAID5, hot-spare
+- SDS objects:
+	- metadevices
+	- metadevices state database (SDS configuration)
+	- hot-spare pool: a spare disk slice if RAID 5 failure encountered
+- SDS config files:
+	- /etc/lvm/mddb.cf : (ro) location of state dbs
+	- /etc/lvm/md.tab  : used as input for command lines
+	- /etc/lvm/md.cf   : (ro) backup copy of local disk set config
+	- /kernel/drv/md.conf :
+			nmd : # of metadevices can supoort
+			md_nsets : # of disk sets
+	- /etc/lvm/mdlodg.cf : SNMP trap generator daemon (mdlogd)
+	- /etc/rcS.d/S35lvm.ini
+	- /etc/rcS.d/S35lvm.sync
+
+
+StorEdge Volume Manager (SEVM)
+
+- volume (virtual disk)
+- less cryptic commands
+- more powerful GUI
+- SEVM objects:
+	- VM disk : physical disk or partition
+	- Disk groups
+	- Volume : what application see
+	- Subdisk
+	- Plexes
+
+/dev/vx/dsk/{volume-group}/{volume-name}
+/dev/vx/dsk/rootdg/usr
+
+- SEVM config files
+	- volboot : boot strap
+	- /etc/rcS.d/S25vmvx-sysboot
+	- /etc/rcS.d/S35vmvx-startup1
+	- /etc/rcS.d/S45vmvx-startup2
+
+
+
+==========================================
+<a name=21></a>
+ CHAPTER 21 Pseudo FS & Swap space
+==========================================
+
+Pseudo FS
+
+## File /etc/vfstav
+/proc   -       /proc   proc    -       no      -
+
+/proc/
+/proc/pid
+/proc/pid/ctl		write only file, control behavior, send signals
+/proc/pid/status	process status, stopped, started!
+/proc/pid/map		Address space map
+/proc/pid/psinfo	infomration displayed by "ps" command
+/proc/pid/cred		process system credentials
+
+
+
+# swap -s
+total: 82672k bytes allocated + 76016k reserved = 158688k used, 552600k available
+
+Allocated: used by the process
+Reserved: reserved but not used yet
+
+
+Swap file size should be 0.5 to 1.5 times the physical memory
+
+
+proc file system commands:
+
+# cmd pid			# by pid
+# cmd /proc/pid 	# by pid file
+# cmd /proc/*		# all processes
+# cmd core-file 	# core file of process
+
+pflags		tracing flags
+pcred		show (/proc/pid/cred)
+pmap		show (/proc/pid/map)
+pldd		dynamic lib process use
+psig		signal actions of each process
+pstack		stack trace of function calls
+pfiles		files information process use
+pwdx		Show pwd for the process
+pstop		stop pid
+prun		run pid
+pwait		wait for pid
+ptree		show process tree (parent & child of process)
+ptime		show time he process took
+
+(-F) force if other process have control
+
+# gcore -o core-file pid	# create core file of running process
+
+
+
+Swap space
+
+# swap -s						# summary of swap space
+# swap -l						# list all swap areas
+# swap -a /path/to/swap-file	# add swap file to swap space
+# swap -d /path/to/swap-file	# delete swap file from swap space
+
+
+# mkfile 250m /path/to/swap-file	# make 250M swap file
+
+
+to add permenantly to system add swap file in /etc/vfstab
+## /etc/vfstab
+/path/to/swap-file	-	-	swap	-	-	-
+
+
+
+
+
+
+
+
+
+
+==========================================
+<a name=22></a>
+ CHAPTER 22 NFS
+==========================================
+
+NFS server
+
+ /etc/init.d/nfs.server start
+
+Files:
+ /etc/dfs/dfstab		# resource to share (contains simple share commands)
+ /etc/dfs/sharetab		# (ro) shared resource (used by unshareall)
+ /etc/rmtab 			# (ro) remotly mounted shares
+ 
+ 
+Commands:
+ # dfshare 				# 
+ # share				# show shared file resources
+
+ # share -F nfs -o ro -d "My disk" /disk
+ -F nfs 				# always nfs for nfs shares
+ -o ro					# options read only   (ro,rw=host1:host2)
+ -d "My disk"			# description
+ /disk					# resource to share
+ 
+ # unshare	/mydisk
+
+ # shareall 			# share all resource in /etc/dfs/dfstab
+ # unshareall			# unshare all sahred reources read from /etc/dfs/sharetab
+ 
+Deamons:
+ mountd 				# resbonsible of mounting clients
+ nfsd					# handling files
+
+
+
+
+ 
+NFS client
+
+files:
+ /etc/vfstab
+ /etc/mnttab
+ 
+Commands:
+ # mount -F nfs -o rw  server:/opt/install /local/install
+ -o [rw|ro]				# read write | read only
+ -o [bg|fg] 			# background | foreground (wait until mount?)
+ -o [soft|hard] 		# soft: return error directly, hard: retry until server resbond
+ -o [intr|noinr]		# interrupt: use keyboard to kill hung hard mount process.
+ 
+ # showmount -a			# show localy mounted shares
+ # showmount -d			# show local resourse remotly mounted
+ # showmount -e server 	# show available shares of server
+ 
+Daemons are started automatically, without any need to start them:
+ statd
+ lockd
+
+
+
+
+
+
+
+==========================================
+<a name=23></a>
+ CHAPTER 23 Auto FS
+==========================================
+
+Benfits:
+1- Auto mount
+2- Auto UNmount
+3- Use name service for managability
+4- Redunduncy can be used
+
+
+Started by /etc/init.d/autofs
+
+
+Components:
+1- automount command : create AutoFS systems and die
+2- AutoFS file system : catch request to automountED FS and forward them to
+"automountd"
+3- automountd daemon : handle request from AutoFS
+
+
+
+AutoFS maps:
+
+ # automount -v	 		# Reread autoFS maps
+ # automount -t 600		# auto unmount after 600 seconds
+
+
+Indirect Maps (no speical file name) No need to start AutoFS
+
+ ## /etc/myauto.indirect.home
+ rayed		-soft server1:/home/rayed
+ hany		server1:/home/hany
+ jubbar		server2:/home/jubbara server1:/home/jubbara  # Fault tolerance
+
+
+Direct Maps (no speical file name)
+
+ ## /etc/myauto.direct
+ /usr/share/man		server1:/usr/share/man
+
+
+/etc/auto_master
+
+  this file doesn't have locations of remote resource, it only refers to
+  other maps
+
+  ## /etc/auto_master
+  +auto_master								# include auto_master from NIS
+  /etc/common_auto_master					# include a file
+  /net			-hosts						# special map
+  /xfn			-xfn						# speical map
+  /home			/etc/myauto.home	-ro		# indirect map
+  /-			/etc/myauto.direct			# direct map
+
+
+
+
+
+
+==========================================
+<a name=24></a>
+ CHAPTER 24 Cache FS
+==========================================
+
+ # cfsadmin -c /cache		# create a cache dir
+
+ # cfsadmin -l /cache		# list FS stored in cache dir
+
+ # cfsadmin -d cache_Id cache_dir		# remove FS from cache dir
+ # cfsadmin -d all cache_dir			# remove all FS from cache_dir
+
+ # cfsadmin -s mount-point		# consitancey check on mounted cache FS
+ # cfsadmin -s all				# consitancey check on all cache FS
+
+ # cfsadmin -u -o maxfiles=50 /cache	# update settings of chase dir
+
+ # cachefsstat mount-point		# view hit ratio & consistency checks
+ # cachefsstat -z mount-point	# reset counters
+ 
+ # cachefslog -f log-file mount-point	# enable logging
+ # cachefslog -h						# disable logging
+
+ # cachefswssize cache-log-file			# view log file 
+
+
+
+ Mounting Cache FS
+
+ # mount -F cachefs -o backfstype=nfs,cachedir=/cache server1:/usr/local /usr/local
+
+ -F cachefs				# FS type = cachefs
+ -o backfstype=nfs		# back FS
+ -o cachedir=/cache		# cache dir
+ -o backpath=/cdrom		# If back FS is already mountd
+ -o demandconst			# Don't perform consistency check periodicly
+						# consistency check by "cfsadmin -s"
+ -o ro					# Read Only
+
+
+
+
+ Mounting CD-ROM
+ # mount -F cachefs -o backfstype=hsfs,cachedir=/cache,backpath=/cdrom,ro \
+		/dev/cdrom /localcdrom
+
+
+
+
+ Mounting from /etc/vfstav
+ put cache dir in "device to fsck" field, and no need for it in options
+
+ #device         device          mount      FS      fsck    mount   mount
+ #to mount       to fsck         point      type    pass    at boot options
+ #
+ srv1:/opt		/cache-dir		/opt		cachefs	2		yes	backfstype=nfs
+
+
+
+ # cachefsstat /opt
+ /opt
+	cache-hit-rate:	88%	(33 hits, 6 misses)
+	consistency checks:	3	(2 pass, 1 fail)
+	modifies:	0
+
+
+
+ CacheFS check
+
+ # fsck -F cachefs /cache-dir
+
+
+
+
+
+==========================================
+<a name=25></a>
+ CHAPTER 25 Naming Service
+==========================================
+
+Benfits:
+- Centralized adminstration
+- Consistency
+- Prevent signle point of failure
+- immediate update
+
+Supported Name Services:
+- DNS
+- NIS
+- NIS+
+- LDAP
+
+DNS files
+- /etc/nsswitch.conf
+- /etc/resolv.conf
+- /etc/named.conf
+- named.ca : refernce DNS root servers
+- named.local : localhost zone
+- domainname
+- domainname.rev
+
+NIS+
+- built-in authentication
+- store security, mail, printers
+- dynamic namespace
+- heirarchicl namespace
+- distrbuted adminstration
+- Objects:
+	- Entry
+	- Directory : divide NIS+ namespace
+	- Table : same as NIS maps (contain Entry objects)
+	- Group : NIS+ admistration groups (refer to cred table)
+	- Link  : pointers to other objects
+
+
+Which Name Service to Use?
+files		small LAN
+DNS			Internet, large LAN, WAN
+NIS			LAN
+NIS+		multiple LAN
+LDAP		LAN, WAN
+
+
+ # cat /etc/nsswitch.conf
+ hosts: files dns
+ 
+ hosts: nis [NOTFOUND=return] files
+ - if not found in NIS stop
+ - if no NIS, try files
+
+Status Code
+- SUCCESS : defualt action "return"
+- UNAVAIL :                "continue"
+- NOTFOUND:                "continue"
+- TRYAGAIN:                "continut"
+
+Status Code Action:
+- continue : try next name service
+- return   : don't try next name service
+
+
+
+
+==========================================
+<a name=26></a>
+ CHAPTER 26 NIS
+==========================================
+
+Setting a Host Domain Name
+- # domainname saudinet		## command to set domain
+- To store the domain name put it in /etc/defaultdomain
+
+NIS Maps
+- /var/yp/domain-name is used to store information databses (maps)
+- converted from ASCII store NDBM format
+	- map.sortkey.pag : data
+	- map.sortkey.dat : index
+- e.g. hosts map
+	hosts.byadd.dir 	address is the key
+	hosts.byadd.pag
+	hosts.byname.dir	name is the key
+	hosts.byname.pag
+- "makedbm ascii dbm" 		convert ascii to dbm
+- "makedbm -u dbm > ascii"	convert dbm to ascii
+
+
+NIS Master
+- configure the "domain name"
+- process
+	- ypbind			Name service binding process
+	- ypserv			Server process to look up info in maps
+	- ypxfer			Transfer maps to Slave
+	- rpc.yppasswdd		passwd changing daemon
+	- rpc.ypupdated		update info in NIS ... ?
+- setup
+	- add slaves to "/etc/hosts"
+	- "cd /var/yp"
+	- "ypinit -m" it will ask about slaves
+	- change "/etc/nsswitch.conf"
+	- /usr/lib/netsvc/yp/ypstart to start NIS
+	- /usr/lib/netsvc/yp/ypstop  to stop  NIS
+
+
+NIS Slave
+- process
+	- ypbind
+	- ypserv
+- setup
+	- set up as client
+	- put master in "/etc/hosts"
+	- "ypinit -s master"
+
+
+NIS Client
+- process
+	- ypbind
+- setup
+	- configure domain name
+	- change /etc/nsswitch.conf to use NIS
+	- broadcast: "mkdir /var/yp/binding/domain-name ; ypbind -broadcast"
+	- Server list: "ypinit -c" will ask about server list
+
+
+ # ypbind -broadcast		# set up NIS client using broadcast
+							# must run "mkdir /var/yp/binding/domain-name"
+							# first
+
+ # ypinit -c				# set up NIS client, it will ask about NIS servers
+ # ypinit -m				# set up NIS Master
+ # ypinit -s master-serv	# set up NIS Slave, using master-serv
+
+ # yppush auto_direct		# manually push a map to slaves (usually found in
+ 							# Makefile)
+
+ # /usr/lib/netsvc/yp/ypstart	# start the NIS (client, master, slave)
+ # /usr/lib/netsvc/yp/ypstop
+
+ # ypcat passwd				# view map data
+ # ypcat -x					# view maps nickname
+ # ypmach -k rayed passwd	# find entry in map
+ # getent passwd rayed		# based on "/etc/nsswitch.conf"
+ # ypwhich passwd			# who is the master of map
+
+
+
+==========================================
+<a name=27></a>
+ CHAPTER 27 Role-Based Access Control (RBAC)
+==========================================
+
+
+
+
+
+
+==========================================
+<a name=28></a>
+ CHAPTER 28 Solaris Managment Console (SMS) & Solstice AdminSuite
+==========================================
+
+
+
+
+==========================================
+<a name=29></a>
+ CHAPTER 29 JumpStart
+==========================================
+
+
+
+
+
+

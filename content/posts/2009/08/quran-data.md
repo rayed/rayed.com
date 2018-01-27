@@ -14,6 +14,9 @@ tags:
 wordpress_id: 658
 
 ---
-<p>وضعت كل البيانات التي استخدمتها في برنامج القرآن للتحميل، مع معلومات عن كيفية استخدامها.<br />
-<a href="http://rayed.com/wordpress/?page_id=632">صفحة بيانات القرآن</a><br />
-<a href="http://dev.rayed.com/quran/">برنامج القرآن</a></p>
+وضعت كل البيانات التي استخدمتها في برنامج القرآن للتحميل، مع معلومات عن كيفية استخدامها.
+
+<a href="http://rayed.com/wordpress/?page_id=632">صفحة بيانات القرآن</a>
+
+<a href="http://dev.rayed.com/quran/">برنامج القرآن</a>
+

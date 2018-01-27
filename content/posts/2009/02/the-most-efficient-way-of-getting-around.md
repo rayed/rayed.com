@@ -8,7 +8,7 @@ categories:
 wordpress_id: 546
 
 ---
-<p><a href="http://awesome.goodmagazine.com/transparency/web/trans0209gettingaround.html"><br />
-<img src="http://rayed.com/wordpress/wp-content/uploads/2009/02/fuel.png" alt="fuel" title="fuel"  /><br />
-http://awesome.goodmagazine.com/transparency/web/trans0209gettingaround.html<br />
-</a></p>
+<a href="http://awesome.goodmagazine.com/transparency/web/trans0209gettingaround.html">
+<img src="/static/uploads/2009/02/fuel.png" alt="fuel" title="fuel"  />
+http://awesome.goodmagazine.com/transparency/web/trans0209gettingaround.html
+</a>

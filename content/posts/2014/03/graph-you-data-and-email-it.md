@@ -84,7 +84,7 @@ So I wrote the following small script, `email_graph.sh`:
 
 When you run it you will receive the following graph on your email:
 
-<img src="http://rayed.com/wordpress/wp-content/uploads/2014/03/noname.png" alt="plot" width="500" height="300" class="alignnone size-full wp-image-1580" srcset="https://rayed.com/wordpress/wp-content/uploads/2014/03/noname.png 500w, https://rayed.com/wordpress/wp-content/uploads/2014/03/noname-300x180.png 300w" sizes="(max-width: 500px) 100vw, 500px" />
+<img src="/static/uploads/2014/03/noname.png" alt="plot" width="500" height="300" class="alignnone size-full wp-image-1580" srcset="/static/uploads/2014/03/noname.png 500w, /static/uploads/2014/03/noname-300x180.png 300w" sizes="(max-width: 500px) 100vw, 500px" />
 
 Of course you can edit the email HTML template, add new graph, or do whatever you like to customise it.
 
