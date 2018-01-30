@@ -1,7 +1,6 @@
 ---
 title: "Search"
 date: 2018-01-30T09:53:28+03:00
-draft: true
 ---
 
 <div>
@@ -16,5 +15,5 @@ draft: true
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search></gcse:search>
+<gcse:search linktarget="_parent"></gcse:search>
 </div>

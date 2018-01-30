@@ -510,8 +510,13 @@ $map = array(
  "86" => "/posts/2004/12/thunderbird-1-released/", 
 );
 
-if (isset($_GET["p"]) and isset($map[$_GET["p"]])) {
-    header("Location: " . $map[$_GET["p"]] );
+if (isset($_GET["tag"])) {
+    $tag = strtolower($_GET["tag"]);
+    header("Location: /tags/{$tag}", TRUE, 301);
+
+} elseif (isset($_GET["p"]) and isset($map[$_GET["p"]])) {
+    header("Location: " . $map[$_GET["p"]], TRUE, 301 );
+
 } else {
     header("Location: /");
 }
