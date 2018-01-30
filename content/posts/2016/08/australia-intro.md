@@ -47,7 +47,7 @@ wordpress_id: 1970
 
 كما كتبت مقالات مفصلة عن المدن السياحية الثلاثة التي تستحق الزيارة في استراليا:
 
-- [سيدني](/blog/posts/2016/07/australia-sydney/)
-- [ملبورن](/blog/posts/2016/07/australia-melbourne/)
-- [جولد كوست](/blog/posts/2016/07/australia-goldcoast/)
+- [سيدني](/posts/2016/07/australia-sydney/)
+- [ملبورن](/posts/2016/07/australia-melbourne/)
+- [جولد كوست](/posts/2016/07/australia-goldcoast/)
 
