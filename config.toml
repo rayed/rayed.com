@@ -10,3 +10,9 @@ sectionPagesMenu = "main"
     name = "Old Blog"
     weight = -110
     url = "https://rayed.com/old_wordpress/"
+
+
+[params]
+    github = "https://github.com/rayed"
+    twitter = "https://twitter.com/rayed"
+    instagram = "https://www.instagram.com/rayed/"

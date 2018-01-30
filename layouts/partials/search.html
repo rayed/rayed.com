@@ -1,0 +1,9 @@
+<div id="search-form">
+    <form action="{{ .Site.BaseURL}}search/" method="get" accept-charset="UTF-8" class="search-form">
+        <input type="search" name="q" results="0" class="search-form-input" placeholder="{{with .Site.Data.l10n.search.placeholder}}{{.}}{{else}}Search{{end}}"
+        style="border:1px solid silver;
+        opacity:0.8;
+        margin:0 10px;
+        padding: 4px;">
+   </form>
+</div>
