@@ -16,7 +16,7 @@ wordpress_id: 1266
 **UPDATE 2**: I added a new example application with user access, user must login and each user has his own list.
 **Sample Code:** You can download a sample application from (https://github.com/rayed/django_crud)
 
-**UPDATE 3**: You might be interested in <a href="https://rayed.com/wordpress/?p=1873">Django CRUD Parent/Child Edition</a>
+**UPDATE 3**: You might be interested in [Django CRUD Parent/Child Edition](/posts/2016/01/django-crud-parentchild-edition/)
 
 In this post I briefly cover the step needed to create a CRUD app in Django, the steps we will need are:
 
@@ -88,7 +88,7 @@ Django will give you free CRUD interface from the admin site, just define the fi
 
 ### The Views
 
-We will use Django Class-based views to crete our app pages, the file **servers/views.py** would look like:
+We will use Django Class-based views to create our app pages, the file **servers/views.py** would look like:
 
     from django.http import HttpResponse
     from django.views.generic import TemplateView,ListView

@@ -18,4 +18,6 @@ wordpress_id: 52
 ... change: $charset = 'iso-8859-1';<br />
 ... to: $charset = 'windows-1256';<br />
 </code></p>
-<p><strong>UPDATE:</strong> PHPMyAdmin can show Arabic fine without problem even with English interface, if you have problem with Arabic it is a misconfiguration in your database, check this post for the proper way to handle Arabic in MySQL: <a href="http://rayed.com/wordpress/?p=324">MySQL: fixing errors of the past</a></p>
+
+<strong>UPDATE:</strong> PHPMyAdmin can show Arabic fine without problem even with English interface, if you have problem with Arabic it is a misconfiguration in your database, check this post for the proper way to handle Arabic in MySQL:
+[MySQL: fixing errors of the past](/posts/2007/09/mysql-fixing-errors-of-the-past)

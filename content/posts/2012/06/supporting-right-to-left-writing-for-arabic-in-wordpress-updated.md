@@ -8,9 +8,9 @@ categories:
 wordpress_id: 1018
 
 ---
-**UPDATE: I found an easier way to do the same thing <a href="http://rayed.com/wordpress/?p=1290">Check it out</a>**
+**UPDATE: I found an easier way to do the same thing [Check it out](/posts/2013/08/supporting-right-to-left-writing-for-arabic-in-wordpress-the-easy-way/)**
 
-This post is an update of previous old post: <a href="http://rayed.com/wordpress/?p=303">Supporting right to left writing (for Arabic) in WordPress</a>
+This post is an update of previous old post: [Supporting right to left writing (for Arabic) in WordPress](/posts/2007/04/supporting-right-to-left-writing-for-arabic-in-wordpress/)
 
 In my blog I write in both languages English and Arabic, but I have to switch text direction from the template default English direction “Left to Right” to Arabic “Right to Left”.
 One way do to it is to add HTML tags in each Arabic entry.

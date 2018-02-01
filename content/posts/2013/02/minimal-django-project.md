@@ -74,6 +74,6 @@ To access it:
 <a href="http://localhost:8000/admin/">Admin @ localhost</a>
 
 **Mac OSX errors**
-You might get "ValueError: unknown locale: UTF-8" error, check this post on how to fix it.
-http://rayed.com/wordpress/?p=1134
+You might get "ValueError: unknown locale: UTF-8" error, check [this post on how to fix it.]
+(/posts/2013/03/fixing-cannot-change-locale-utf-8-error/)
 

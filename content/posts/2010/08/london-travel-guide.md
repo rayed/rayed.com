@@ -21,12 +21,10 @@ wordpress_id: 759
 ---
 روابط ذات علاقة
 
-
-
-- <a href="http://rayed.com/wordpress/?p=1051">اليابان: رحلتي الى طوكيو</a> 
-- <a href="http://rayed.com/wordpress/?p=661">خواطر عن لندن</a>
-- <a href="http://rayed.com/wordpress/?p=716">أين تذهب في واشنطن</a>
-- <a href="http://rayed.com/wordpress/?p=1203">أين تذهب في نيو اورلينز New Orleans</a>
+- <a href="/posts/2013/08/japan-tokyo/">اليابان: رحلتي الى طوكيو</a> 
+- <a href="/posts/2009/09/london-thoughts/">خواطر عن لندن</a>
+- <a href="/posts/2009/12/washington-travel-guide/">أين تذهب في واشنطن</a>
+- <a href="/posts/2013/04/new-orleans-travel-guide/">أين تذهب في نيو اورلينز New Orleans</a>
 
 
 مقالة مقتسبة من رسالة بريدية ارسلتها لصديق سألني عن لندن، على الرغم من خبرتي المتواضعة جداً عن المدينة الا اني كتبت عن الاماكن التي اعجبتني واستعنت باحد اصدقائي ساكني لندن لاكمالها، علها تكون مفيدة وتلغي صورة <a href="http://ar.wikipedia.org/wiki/%D8%A5%D8%AF%D8%AC%D9%88%D8%B1_%D8%B1%D9%88%D8%AF">ادجوار رواد</a> التي تظهر لدى الكثيرين عند ذكر لندن.

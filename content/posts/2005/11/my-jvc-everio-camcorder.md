@@ -10,7 +10,7 @@ wordpress_id: 174
 ---
 <img src="/static/uploads/old/jvc_camcorder.jpg" alt="JVC Evrio" align="right" />
 
-I <a href="http://rayed.com/wordpress/?p=149">wrote</a> a while back about JVC camcorder with hard disk, I bought this camera to shoot my baby life 🙂
+I [wrote](/posts/2005/10/jvc-camcorders-with-hard-disk/) a while back about JVC camcorder with hard disk, I bought this camera to shoot my baby life 🙂
 
 I thought I would write small review about it, so here is the good and the bad.
 

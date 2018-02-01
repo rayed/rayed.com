@@ -15,7 +15,7 @@ tags:
 wordpress_id: 1873
 
 ---
-I've <a href="https://rayed.com/wordpress/?p=1266">written before</a> about implementing CRUD operations on a single table in <a href="https://www.djangoproject.com">Django</a>, and the post was very popular on my blog and I hope many people learned something from it.
+I've [written before](/posts/2013/07/django-crud-create-retrieve-update-delete/) about implementing CRUD operations on a single table in <a href="https://www.djangoproject.com">Django</a>, and the post was very popular on my blog and I hope many people learned something from it.
 
 The next logical step is to write a CRUD application with Parent/Child relationship, the application is bit more verbose but it follow the same simple logic used in the first post.
 

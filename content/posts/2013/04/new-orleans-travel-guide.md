@@ -18,9 +18,13 @@ tags:
 wordpress_id: 1203
 
 ---
-<a href="http://rayed.com/wordpress/?p=759">اين تذهب في لندن</a>
-<a href="http://rayed.com/wordpress/?p=661">خواطر عن لندن</a>
-<a href="http://rayed.com/wordpress/?p=716">اين تذهب في واشنطن</a>
+
+روابط ذات علاقة
+
+- <a href="/posts/2013/08/japan-tokyo/">اليابان: رحلتي الى طوكيو</a> 
+- <a href="/posts/2010/08/london-travel-guide/">أين تذهب في لندن</a>
+- <a href="/posts/2009/09/london-thoughts/">خواطر عن لندن</a>
+- <a href="/posts/2009/12/washington-travel-guide/">أين تذهب في واشنطن</a>
 
 تقع مدينة <a href="http://en.wikipedia.org/wiki/New_Orleans">نيو اورلينز</a> في ولاية لويزيانا في الولايات المتحدة الامريكية، ولسبب ما فان المدينة سحرتني منذ زمن بعيد قبل ان ازورها ولا اعرف كيف ولماذا! كل ما اعرفه انني عندما زرتها لم تخيب ظني وطابقت كل ما تخيلته عنها وزادت.
 

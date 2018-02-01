@@ -12,7 +12,7 @@ wordpress_id: 1165
 
 ---
 **UPDATE:
-Steps in this post isn't correct, check the <a href="http://rayed.com/wordpress/?p=1650">Django Themes</a> post for better solution.**
+Steps in this post isn't correct, check the [Django Themes](/posts/2014/09/django-where-to-put-base-html-template-or-how-to-make-django-themes/) post for better solution.**
 
 When deploying Django site it is always recommended to serve static files (e.g. js, css, img, static, media) using a normal web server instead of relying on <a href="https://docs.djangoproject.com/en/dev/ref/django-admin/#runserver-port-or-address-port">Django built development server</a> or <a href="http://gunicorn.org/">Gunicorn</a>.
 

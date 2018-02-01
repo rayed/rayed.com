@@ -12,7 +12,7 @@ tags:
 wordpress_id: 1290
 
 ---
-This post is an update of previous old post: <a href="http://rayed.com/wordpress/?p=1018">Supporting right to left writing (for Arabic) in WordPress</a>
+This post is an update of previous old post: [Supporting right to left writing (for Arabic) in WordPress](/posts/2012/06/supporting-right-to-left-writing-for-arabic-in-wordpress-updated/)
 
 <!--more-->
 
