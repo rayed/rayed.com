@@ -14,11 +14,16 @@ tags:
 
 ---
 
-Install Docker Compose:
+In the last post I covered starting a new Django project with Docker, and how to build a custom container image for my project, but what I haven't covered is how to use a Database and how persist your data since all data stored in the container ephemeral and would only exist during the life span of the container.
+<!--more-->
 
-    sudo yum install -y docker-compose
+Instead of managing the Database inside my container we will use a ready made container, in my case I am going to use [Postgres](https://hub.docker.com/_/postgres/), and to solve data persistence issue we are going to mount Postgres data directory into a named [volume](https://docs.docker.com/storage/volumes/).
 
-Create new docker-compose.yml:
+But what about telling my Django app where to find the Postgres instance! Luckily this part is easily solved with the use of Docker [Compose](https://docs.docker.com/compose/)
+
+> Compose is a tool for defining and running multi-container Docker applications
+
+We start with creating a new `docker-compose.yml` file describing what services our application consist of:
 
     version: "3"
     services:
@@ -59,11 +64,12 @@ Create new docker-compose.yml:
     volumes:
       db-data:
 
-Add to requirements.txt
+
+We need to change some settings in our Django app to add Postgres support, by adding the following line to `requirements.txt`:
 
     psycopg2==2.7.3.2
 
-Change DATABASE section in apps/apps/settings.py:
+and change our database settings by changing the DATABASE section in apps/apps/settings.py:
 
     DATABASES = {
         'default': {
@@ -75,9 +81,13 @@ Change DATABASE section in apps/apps/settings.py:
         }   
     }
 
-Start Docker compose serive:
+That's all we need to change, we can now start our Docker compose application using the following command:
 
     docker-compose up -d
+
+and to execute more commands (e.g. DB migrations) on the running instance:
+
     docker exec -it dockerdjango_web_1 ./apps/manage.py migrate 
     docker exec -it dockerdjango_web_1 ./apps/manage.py createsuperuser
 
+Note: dockerdjango is the name of the directory we are running the command from, you can use docker ps to find out your instances name too.
