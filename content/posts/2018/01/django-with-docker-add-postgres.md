@@ -6,6 +6,11 @@ date: 2018-01-24T20:33:26+03:00
 categories:
   - Uncategorized
 wordpress_id: 2096
+tags:
+  - django
+  - docker
+  - linux
+  - python
 
 ---
 
