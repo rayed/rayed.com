@@ -1,0 +1,9 @@
+
+<div class="mt5 f6 gray nested-lh-copy bg-light-gray ph3 pv2 measure-wide-l">
+    <h4>Tags:</h4>
+    {{ range .Params.tags }}        
+        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="link mid-gray dim">
+                {{ . }}
+        </a>
+    {{end}}
+</div>

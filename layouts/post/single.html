@@ -22,11 +22,13 @@
         {{ .Content }}
       </section>
       {{ partial "tags.html" . }}
+
       <div class="comments">
           {{ if .Site.DisqusShortname }}{{ template "_internal/disqus.html" . }}{{ end }}
       </div>    
     </article>
     <div class="ph3 mt2 mt6-ns">
+      {{ partial "tags-list.html" . }}
       {{ partial "menu-contextual.html" . }}
     </div>
   </div>
