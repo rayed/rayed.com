@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<style><!--
+* {
+  font-family:tahoma;
+  margin:0;
+  padding:0;
+  }
+#ajax_wrap {
+  position:relative;
+  width:450px;  
+  }
+
+#ajax_form {
+  background:#f5fafa;
+  padding:20px;
+  }
+  
+.ajax_msg {
+  color:#222;
+  border:1px solid #c0d6ef;
+  background:#eef4fb;
+  position:absolute;
+  text-align:center;
+
+  top:50%;
+  left:50%;
+  
+  padding:10px;
+  margin-top:-35px;
+  margin-left:-110px;
+  height:50px;
+  width:200px;
+  
+  display:none;  
+} 
+
+#ajax_success {
+  background:#ceffca;
+  border:1px solid #b0ffaa;
+  }
+
+#ajax_disable {
+  background:white;
+  position:absolute;
+  top:0;
+  height:0;
+  width:100%;
+  height:100%;
+  display:none;
+  }
+  
+--></style>
+
+<script>
+function ajax_submit() {
+ e = document.getElementById("ajax_disable")
+ e.style.opacity =0.8;
+ e.style.filter = "alpha(opacity=80)"
+ e.style.zIndex=100
+ e.style.display = "block"
+
+ e = document.getElementById("ajax_load")
+ e.style.display = "block"
+ e.style.zIndex=101
+
+ setTimeout('ajax_loaded()',1000)
+}
+function ajax_loaded() {
+ e = document.getElementById("ajax_success")
+ e.style.display = "block"
+ e.style.zIndex=101
+
+}
+</script>
+
+<div id="ajax_wrap">
+
+
+<div id="ajax_form">
+<h3>Submit your data</h3>
+<form onsubmit="ajax_submit(); return false;" didabled>
+
+<table>
+<tr>
+<th>Name
+<td><input type=text>
+<tr>
+<th>Email
+<td><input type=text>
+<tr>
+<th>Comment
+<td><textarea></textarea>
+<tr>
+<th colspan="2"><input type="submit" value="Send" />
+</table>
+
+</form>
+</div>
+
+
+<div id="ajax_disable"></div>
+
+<div class="ajax_msg" id="ajax_load">
+Loading<br/>
+<img src="ajax-loader.gif" />
+</div>
+
+
+<div class="ajax_msg" id="ajax_success">
+Successfuly sent<br/>
+Thank you
+</div>
+
+<div class="ajax_msg" id="ajax_failed">
+An error has occured, please try again later.
+</div>
+
+
+</div>

@@ -10,7 +10,7 @@ wordpress_id: 181
 ---
 <p><a href="http://www.mozilla.com/thunderbird/">Thunderbird</a> is my favourite email client, I really love it.<br />
 The only problem I face is when writing an Arabic email, the problem is with changed the direction of text from &#8220;Left to Right&#8221; (ltr) to &#8220;Right to Left&#8221; (rtl).</p>
-<p><a href="/upload/2005-12-04/thunderbird.png"><img src='/upload/2005-12-04/thunderbird-small.png' align="right" alt='' /></a><br />
+<p><a href="/static/uploads/old/2005-12-04/thunderbird.png"><img src='/static/uploads/old/2005-12-04/thunderbird-small.png' align="right" alt='' /></a><br />
 The trick works like this:</p>
 <ul>
 <li>From the toolbar change the text alignment to the right.</li>

@@ -11,8 +11,8 @@ wordpress_id: 201
 <table align="right">
 <tr>
 <td>
-<img src="/upload/2006-02-03/subway.png" /></p>
-<p><img src="/upload/2006-02-03/quiznos.png" width="147" />
+<img src="/static/uploads/old/2006-02-03/subway.png" /></p>
+<p><img src="/static/uploads/old/2006-02-03/quiznos.png" width="147" />
 </td>
 </tr>
 </table>

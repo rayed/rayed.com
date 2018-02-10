@@ -8,7 +8,7 @@ categories:
 wordpress_id: 258
 
 ---
-<p><a href="http://herfy.com/"><img src="http://rayed.com/upload/2006-08-12/herfy.jpg" alt="Herfy" align="right" /></a></p>
+<p><a href="http://herfy.com/"><img src="/static/uploads/old/2006-08-12/herfy.jpg" alt="Herfy" align="right" /></a></p>
 <p>Yesterday I visited one of my favourite fast food resturants, <a href="http://herfy.com/">Herfy</a>, and I order my usual meal &#8220;Super Herfy&#8221;. It usually cost 15 SR, but when I ordered it he asked me for 17 SR!! then I remembered that some resturants super size your meal without asking, I usually expect this kind of practice from &#8220;Hardee&#8217;s&#8221; and &#8220;KFC&#8221; not from Herfy.</p>
 <p>I hate super sizing in general, because they super size the french fries and the drink, and I am not a big fan of both, and the medium serving is more than enough for me. But if you are offering super sizing my burgers this is a different story 🙂</p>
 <p>Super sizing is one thing, super sizing without asking is another thing, I hope someone sue all the resturants super sizing without asking.</p>

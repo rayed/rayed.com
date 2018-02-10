@@ -11,7 +11,7 @@ categories:
 wordpress_id: 249
 
 ---
-<a href="http://www.jedit.org/"><img src="/upload/2006-06-17/jedit.png" align="right" border="0" /></a>
+<a href="http://www.jedit.org/"><img src="/static/uploads/old/2006-06-17/jedit.png" align="right" border="0" /></a>
 
 [A year ago](/posts/2005/08/new-plans-for-alriyadhcom/) <a href="http://www.waleedsgallery.biz/">Waleed Alzuhair</a> asked me about the reason I am still using Windows-1256 Arabic character set, intead of the new standard Unicode. My reason was the lack of good editor that support Arabic and Unicode, my favourite eidtor HTML-Kit doesn't have any support for Unicode.
 
