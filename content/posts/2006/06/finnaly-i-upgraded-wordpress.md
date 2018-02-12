@@ -1,5 +1,5 @@
 ---
-title: Finnaly I upgraded WordPress
+title: Finally I upgraded WordPress
 author: Rayed
 type: post
 date: 2006-06-07T00:19:35+03:00
