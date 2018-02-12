@@ -8,7 +8,7 @@ categories:
 wordpress_id: 234
 
 ---
-<p><img src="/upload/2006-05-16/adam.png" align="right"/>Today I contacted <a href="http://www.adamsa.com/">ADAM</a> -the Apple distributer in Jeddah- by email and they replied after 20 minutes, which is a good thing, here is the reply:</p>
+<p><img src="/static/uploads/old/2006-05-16/adam.png" align="right"/>Today I contacted <a href="http://www.adamsa.com/">ADAM</a> -the Apple distributer in Jeddah- by email and they replied after 20 minutes, which is a good thing, here is the reply:</p>
 <blockquote><p>
 Our branch in Riyadh is for whole sale only, but we can send you what ever you need from Jeddah.<br />
 The intel iMac 20&#8243; is for 7500SR not including shipping.

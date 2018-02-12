@@ -10,6 +10,9 @@ categories:
 wordpress_id: 251
 
 ---
-<p><a href="http://www.python.org/">Python</a>, my favorite computer language (althought I don&#8217;t use it that often) released 2.5 beta version.<br />
-What amazed me that their website is now changed with new look, and Python has a new logo too.</p>
-<p><a href="http://www.python.org/"><img src="/upload/2006-06-26/python-logo.gif" border="0" /></a></p>
+<a href="http://www.python.org/">Python</a>, my favorite computer language (althought I don't use it that often) released 2.5 beta version.
+
+What amazed me that their website is now changed with new look, and Python has a new logo too.
+
+<a href="http://www.python.org/"><img src="/static/uploads/old/2006-06-26/python-logo.gif" border="0" /></a>
+
