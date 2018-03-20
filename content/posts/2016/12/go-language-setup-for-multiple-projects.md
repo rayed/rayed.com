@@ -13,6 +13,8 @@ tags:
 wordpress_id: 1992
 
 ---
+**Update:** It turns out that this setup is needed, you should a have single GOPATH directory with all of your projects inside it, and use the [vendor](https://golang.org/cmd/go/#hdr-Vendor_Directories) feature to handle each project dependencies.
+
 When working with [Go](https://golang.org/) language you must setup the GOPATH environment variable, but soon you will face two problems:
 
 - Each project should have its own Go dependencies and its own Git code repo, so putting your source under GOPATH would be problematic.
