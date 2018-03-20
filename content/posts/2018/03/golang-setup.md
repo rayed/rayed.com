@@ -3,7 +3,7 @@ title: "GO language Environment Setup"
 date: 2018-03-20T13:36:00+03:00
 ---
 
-Here I'll write about setting up a GO language envirounment in MacOS and CentOS.
+Here I'll write about setting up a GO language environment in MacOS and CentOS.
 
 <!--more-->
 
@@ -27,7 +27,7 @@ Here I'll write about setting up a GO language envirounment in MacOS and CentOS.
     git checkout master
 
 
-## Enviroument Setup
+## Environment Setup
 
     echo 'export GOPATH=$HOME/go' >> ~/.bash_profile
     echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bash_profile
@@ -56,12 +56,12 @@ As an example of new project setup, I run the following commands:
     # Create README.md file
     touch README.md
 
-    # Initalize git
+    # Initialize git
     git init 
-    # git should ignore "vendor" directoy, it should be managed by "dep"
+    # git should ignore "vendor" directory, it should be managed by "dep"
     echo "/vendor" >> .gitignore
 
-    # Initalize "dep" for dependencies managment
+    # Initialize "dep" for dependencies management
     dep init 
     # Always use "dep ensure" command to dependencies
     #   instead of "go get"

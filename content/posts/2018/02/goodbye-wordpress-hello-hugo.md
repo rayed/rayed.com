@@ -6,13 +6,13 @@ draft: true
 
 In June 2005 [I moved my blog](/posts/2005/06/moving-my-blog-from-blogger-to-wordpress/) from [Blogger.com](https://www.blogger.com/) to self hosted Wordpress blog.
 
-Wordpress served me well the last 13 years, but during that time I had some issues that made the expirence less enjoyable.
+Wordpress served me well the last 13 years, but during that time I had some issues that made the experience less enjoyable.
 
-With the rise of static site genrators I was tempted to migrate, but when I tried it, it was much harder that I though, not running the gererator but mainly migrating my old contents.
+With the rise of static site generators I was tempted to migrate, but when I tried it, it was much harder that I though, not running the generator but mainly migrating my old contents.
 
-But early this I migrated my whole blog to use [Hugo](https://gohugo.io/), it wasn't easy and it took few days of research and trial and errors but I finaly managed to do it!
+But early this I migrated my whole blog to use [Hugo](https://gohugo.io/), it wasn't easy and it took few days of research and trial and errors but I finally managed to do it!
 
-Here I'll explain my motives for migrations, and also my expirnce of migrating to Hugo!
+Here I'll explain my motives for migrations, and also my experience of migrating to Hugo!
 
 <!--more-->
 
@@ -45,12 +45,12 @@ You can host your website easily with [Github](https://pages.github.com/) and fo
 
 ### Backups ... Not Anymore!
 
-Since eveything in static site generator is a file, it is easy to but under `git` and keep a version on any git hosting service like github or bitbucket, and as added bonus you would get automatic versioning of your contents!
+Since everything in static site generator is a file, it is easy to but under `git` and keep a version on any git hosting service like github or bitbucket, and as added bonus you would get automatic versioning of your contents!
 
 
 #### Markdown
 
-To me Markdown simpifiy the editing process tremendously and makes it easier to focus on your thought instead of how to write it, it also easier to edit and modify, and all you need is good old text editor!
+To me Markdown simplify the editing process tremendously and makes it easier to focus on your thought instead of how to write it, it also easier to edit and modify, and all you need is good old text editor!
 
 I tried a Markdown plugin with Wordpress, but it added more confusion and gave unpredictable results.
 
@@ -74,9 +74,9 @@ I started with (wordpress-to-hugo-exporter)(https://github.com/SchumacherFM/word
 
 ### Exporting the Comments
 
-Since Hugo is a static site genrator it doesn't support any type of dynamic behviour like adding and viewing comments, but luckily [disqus](https://disqus.com/) provides comment management system by simply adding few lines of JavaScript.
+Since Hugo is a static site generator it doesn't support any type of dynamic behavior like adding and viewing comments, but luckily [disqus](https://disqus.com/) provides comment management system by simply adding few lines of JavaScript.
 
-Disqus can import all the comments from your WordPress export file very easily, but how I can tell Disqus about the URL change, luckily they have a migration tool just for this senario.
+Disqus can import all the comments from your WordPress export file very easily, but how I can tell Disqus about the URL change, luckily they have a migration tool just for this scenario.
 
 I used the following command to extract a URL migration map, by utilizing the "wordpress_id" I've created during the content migration from the previous step:
 
@@ -91,7 +91,7 @@ I had a problem that I didn't anticpate or solve yet, all Arabic names in the co
 
 ### Exporting the Images
 
-Over the past 13 years, I've used many ways to organise my images, so I had to do major organisation to my archive, and I used `grep` again to find incorrect links and fix them manually.
+Over the past 13 years, I've used many ways to organize my images, so I had to do major organization to my archive, and I used `grep` again to find incorrect links and fix them manually.
 
 
 ### Correcting Internal Links
