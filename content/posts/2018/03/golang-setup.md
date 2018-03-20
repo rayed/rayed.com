@@ -3,6 +3,10 @@ title: "GO language Environment Setup"
 date: 2018-03-20T13:36:00+03:00
 ---
 
+Here I'll write about setting up a GO language envirounment in MacOS and CentOS.
+
+<!--more-->
+
 ## Installation
 
 ### MacOS
