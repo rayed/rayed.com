@@ -4,12 +4,12 @@
 Hugo static site generator based
 
 
-To run server localy: 
+To run server locally: 
 
     hugo server -D
 
 To deploy website to rayed.com server:
 
-    ./sync.sh
+    ./deploy.sh
 
     
