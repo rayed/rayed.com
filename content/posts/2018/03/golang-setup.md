@@ -14,9 +14,24 @@ Here I'll write about setting up a GO language environment in MacOS and CentOS.
     brew install go
     brew install dep
 
+    # Setup Environment
+    echo 'export GOPATH=$HOME/go' >> ~/.bash_profile
+    echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bash_profile
+    source ~/.bash_profile
+
+
 ### CentOS
 
-    sudo yum install golang
+    # Check https://golang.org/dl/ for the download link
+    curl -sO https://dl.google.com/go/go1.10.linux-amd64.tar.gz
+    mkdir $HOME/goroot
+    tar -C $HOME/goroot -xzvf go1.10.linux-amd64.tar.gz
+
+    # Setup Environment
+    echo 'export GOROOT=$HOME/goroot/go' >> ~/.bash_profile
+    echo 'export GOPATH=$HOME/go' >> ~/.bash_profile
+    echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> ~/.bash_profile
+    source ~/.bash_profile
 
     # Install "dep"
     go get -d -u github.com/golang/dep
@@ -25,13 +40,6 @@ Here I'll write about setting up a GO language environment in MacOS and CentOS.
     git checkout $DEP_LATEST
     go install -ldflags="-X main.version=$DEP_LATEST" ./cmd/dep
     git checkout master
-
-
-## Environment Setup
-
-    echo 'export GOPATH=$HOME/go' >> ~/.bash_profile
-    echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bash_profile
-    source ~/.bash_profile
 
 
 ## Project Setup
