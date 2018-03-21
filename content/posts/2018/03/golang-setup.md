@@ -1,5 +1,6 @@
 ---
 title: "GO language Environment Setup"
+type: post
 date: 2018-03-20T13:36:00+03:00
 ---
 
