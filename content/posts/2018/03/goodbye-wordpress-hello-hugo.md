@@ -1,16 +1,16 @@
 ---
 title: "Goodbye Wordpress, Hello Hugo"
-date: 2018-02-03T21:11:35+03:00
-draft: true
+date: 2018-03-21T10:50:00+03:00
+type: post
 ---
 
 In June 2005 [I moved my blog](/posts/2005/06/moving-my-blog-from-blogger-to-wordpress/) from [Blogger.com](https://www.blogger.com/) to self hosted Wordpress blog.
 
 Wordpress served me well the last 13 years, but during that time I had some issues that made the experience less enjoyable.
 
-With the rise of static site generators I was tempted to migrate, but when I tried it, it was much harder that I though, not running the generator but mainly migrating my old contents.
+With the rise of static site generators I was tempted to migrate, but when I tried it, it was much harder that I though, running the generator isn't that hard part, but mainly migrating my old contents.
 
-But early this I migrated my whole blog to use [Hugo](https://gohugo.io/), it wasn't easy and it took few days of research and trial and errors but I finally managed to do it!
+But early this year I migrated my whole blog to use [Hugo](https://gohugo.io/), it wasn't easy and it took few days of research and trial and errors but I finally managed to do it!
 
 Here I'll explain my motives for migrations, and also my experience of migrating to Hugo!
 
@@ -28,7 +28,7 @@ I hated that format so much but it was very late, and very cumbersome to change!
 
 ### Ditching the LAMP Stack
 
-PHP was my language of choice when it comes to web application development, but not any more, I mainly moved to using [Django](https://www.djangoprojects.com/), same thing apply to MySQL which I replaced with Postgres, and I also replaced Apache with Nginx! so running a full LAMP stack just to support my blog wasn't a good idea anymore!
+PHP was my language of choice when it comes to web application development, but not any more! I mainly moved to using [Django](https://www.djangoprojects.com/), same thing apply to MySQL which I replaced with Postgres, and I also replaced Apache with Nginx! so running a full LAMP stack just to support my blog wasn't a good idea anymore!
 
 
 ### Updates, updates, updates!!
@@ -45,7 +45,7 @@ You can host your website easily with [Github](https://pages.github.com/) and fo
 
 ### Backups ... Not Anymore!
 
-Since everything in static site generator is a file, it is easy to but under `git` and keep a version on any git hosting service like github or bitbucket, and as added bonus you would get automatic versioning of your contents!
+Since everything in static site generator is a file (remember no DB!), it is easy to put it under `git` and keep it hosted on any git hosting service like github or bitbucket, and as an added bonus you would get automatic versioning of your contents!
 
 
 #### Markdown
@@ -64,7 +64,7 @@ Over the past 13 years I had 3 minor security issues, but hopefully with a stati
 
 ### Exporting the Content
 
-I started with (wordpress-to-hugo-exporter)(https://github.com/SchumacherFM/wordpress-to-hugo-exporter) WordPress plugin, it works by allowing you to download all the content of your website as Hugo ready directory. But I had to make some changes to make it work per my requiremnt:
+I started with [wordpress-to-hugo-exporter](https://github.com/SchumacherFM/wordpress-to-hugo-exporter) WordPress plugin, it works by allowing you to download all the content of your website as Hugo ready directory. But I had to make some changes to make it work per my requirements:
 
 - I had to change the default dates from GMT based to use my own timezone.
 - I added a new field in each post [Front Matter](https://gohugo.io/content-management/front-matter/), the field name is "wordpress_id" this will make it easier to make a map between old URLs and new URLs, by using a simple `grep` command.
