@@ -1,5 +1,5 @@
 ---
-title: "Playing Elasticsearch & Kibana in Docker"
+title: "Playing with Elasticsearch & Kibana in Docker"
 date: 2018-03-21T10:08:38+03:00
 type: post
 tags: 
@@ -10,6 +10,7 @@ tags:
 ---
 
 An easy way to start an [Elasticsearch](https://www.elastic.co/products/elasticsearch) server with [Kibana](https://www.elastic.co/products/kibana) (Elasticsearch frontend) instance!
+
 <!--more-->
 
 First I write the following `docker-compose.yml` file:
