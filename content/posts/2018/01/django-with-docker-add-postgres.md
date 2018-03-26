@@ -35,7 +35,6 @@ We start with creating a new `docker-compose.yml` file describing what services 
           POSTGRES_DB: dj
           POSTGRES_USER: dj
           POSTGRES_PASSWORD: should_use_env
-          PGDATA: /data
         volumes:
           - db-data:/var/lib/postgresql/data
         networks:
@@ -87,7 +86,7 @@ That's all we need to change, we can now start our Docker compose application us
 
 and to execute more commands (e.g. DB migrations) on the running instance:
 
-    docker exec -it dockerdjango_web_1 ./apps/manage.py migrate 
-    docker exec -it dockerdjango_web_1 ./apps/manage.py createsuperuser
+    docker-compose exec web ./apps/manage.py migrate 
+    docker-compose exec web ./apps/manage.py createsuperuser
 
 Note: dockerdjango is the name of the directory we are running the command from, you can use docker ps to find out your instances name too.
