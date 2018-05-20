@@ -12,9 +12,11 @@ wordpress_id: 1266
 aliases: [/posts/2013/07/django-crud-create-retrieve-update-delete/]
 ---
 
-One of the most common task when developing web application is to write create, read, update and delete functionality (CRUD) for each table you have.
+One of the most common task when developing web application is to write 
+create, read, update and delete functionality (CRUD) for each table you have.
 
-In this post I briefly cover the step needed to create a CRUD app in Django, the steps we will need are:
+In this post I briefly cover the step needed to create a CRUD app in
+ Django, the steps we will need are:
 
 <!--more-->
 
@@ -26,6 +28,9 @@ In this post I briefly cover the step needed to create a CRUD app in Django, the
 - Define the URLs (i.e. URL to View mapping)
 - Create the Templates
 
+**Note** These step are updated for Django 2 which requires Python 3, if you don't 
+have Python 3 installed on your system you
+[How To Install and Set Up a Local Programming Environment for Python 3](https://www.digitalocean.com/community/tutorial_series/how-to-install-and-set-up-a-local-programming-environment-for-python-3)
 
 
 ### Install Django and Start New Project
@@ -122,7 +127,7 @@ We will use Django Class-based views to create our app pages, the file `books/vi
 
 ### Define the URLs
 
-We need to define app URLs in the file `books/urls.py`:
+We need to define app URLs in the file `books/urls.py` (create the file):
 
     from django.urls import path
 
@@ -139,6 +144,7 @@ We need to define app URLs in the file `books/urls.py`:
 
 This URLs wouldn't work unless you include the `books/urls.py` in the main URLs file `my_proj/urls.py`:
 
+    # Make sure you import "include" function
     from django.urls import include
 
     urlpatterns = [
@@ -201,6 +207,21 @@ This URLs wouldn't work unless you include the `books/urls.py` in the main URLs 
         Are you sure you want to delete "{{ object }}" ?
         <input type="submit" value="Submit" />
     </form>
+
+
+### Test It
+
+So everything in place, now we can run the development web server:
+
+    ./manage.py runserver
+
+Then access it through a web browser <http://localhost:8000/books/>
+
+To test the admin interface we need to create a user first:
+
+    ./manage.py createsuperuser
+
+and access it <http://localhost:8000/admin/>
 
 
 ### Function Based View Version
