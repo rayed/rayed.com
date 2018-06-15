@@ -286,6 +286,10 @@ The example above uses `Class Based Views` (or CBV for short) to implement the v
         path('delete/<int:pk>', views.book_delete, name='book_delete'),
     ]
 
+You clone the complete example from <https://github.com/rayed/django_crud>
+
+
 p.s. personally I prefer using FBV over CBV, the article <a href="http://lukeplant.me.uk/blog/posts/djangos-cbvs-were-a-mistake/">Django's CBVs were a mistake</a> explains why.
+
 
 **UPDATE:** You might be interested in [Django CRUD Parent/Child Edition](/posts/2016/01/django-crud-parentchild-edition/)
