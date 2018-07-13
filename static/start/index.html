@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"  "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+<meta charset="utf-8">
+<head>
+   <title>Rayed Start Page</title>
+<style TYPE="text/css">
+<!--
+BODY { font-family: verdana; font-size:14px; }
+
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+#search {
+  padding:8px;
+  margin-top:10px;
+  margin-bottom:10px;
+  background: #fafafa;
+  border: 1px solid silver;
+  }
+#search form { margin:0px; }  
+#search input { width:100px; }  
+
+.col { width:25%; float:left; }
+.col ul { margin:0px; padding:0px; list-style:square inside;  }
+.arabic { direction:rtl; font:bold 120% arial; }
+-->
+</STYLE>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#3366FF" alink="#FF0000">
+
+
+<script>
+<!--
+function gourl(url) {
+ f = document.forms[0].elements['0'].value
+ if (f=='') { window.location=search_r[url][0]; }
+ else {	window.location=search_r[url][1]+escape(f); }
+ return true; 
+}
+
+var search_r = Array();
+search_r['Google'] = new Array("http://www.google.com/", "http://www.google.com/search?q="); 
+search_r['Acronym'] = new Array("http://www.acronymfinder.com/", "http://www.acronymfinder.com/af-query.asp?String=exact&Find=Find&Acronym="); 
+search_r['Ripe'] = new Array("http://www.ripe.net/", "http://www.ripe.net/perl/whois?form_type=simple&full_query_string=&do_search=Search&searchtext="); 
+
+search_r['YouTube'] = new Array("http://www.youtube.com/", "http://www.youtube.com/results?search_query=");
+search_r['Amazon'] = new Array("http://www.amazon.com/", "http://www.amazon.com/exec/obidos/external-search?mode=books&keyword="); 
+search_r['PirateBay'] = new Array("http://thepiratebay.org/", "http://thepiratebay.org/search/");
+
+search_r['MoviesDB'] = new Array("http://www.imdb.com/", "http://www.imdb.com/Find?select=All&for="); 
+search_r['Wikipedia'] = new Array("http://en.wikipedia.org/", "http://en.wikipedia.org/wiki/Special:Search?search="); 
+
+//-->
+</script>
+
+<a href="http://rayed.com/">rayed.com</a>
+
+
+<div id="search">
+<form method="get" action="http://www.google.com/search">
+<b>Search</b> <input type="text" name="q" style="width:400px;">
+<script>document.forms[0].elements['q'].focus();</script>
+<br/><br/>
+<input type=button value="Google" onclick="gourl(this.value)" >
+<input type=button value="Acronym" onclick="gourl(this.value)" >
+<input type=button value="Ripe" onclick="gourl(this.value)" >
+<br/>
+<input type=button value="YouTube" onclick="gourl(this.value)" >
+<input type=button value="Amazon" onclick="gourl(this.value)" >
+<input type=button value="PirateBay" onclick="gourl(this.value)" >
+<br/>
+<input type=button value="MoviesDB" onclick="gourl(this.value)" >
+<input type=button value="Wikipedia" onclick="gourl(this.value)" >
+
+<input type=reset value="Clear" >
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+<ul>
+<li><a href="http://www.google.com/ig">My Google</a> </li>
+<li><a href="https://mail.google.com/a/rayed.com/">Rayed</a></li>
+<li><a href="http://www.yahoo.com/">Y!</a>
+    <a href="http://news.yahoo.com/">news</a></li>
+<li><a href="http://gmail.com/">GMail.com</a> |
+    <a href="http://www.hotmail.com/">Hotmail.com</a></li>
+<li><a href="http://www.gwu.edu/">GWU</a></li>
+</ul>
+</ul>
+</div><!-- col -->
+
+
+<div class="col">
+<ul>
+<li><a href="http://www.slashdot.org/">Slashdot</a></li>
+<li><a href="http://reddit.com/">Reddit</a>
+| <a href="http://news.ycombinator.com/">HN</a></li>
+<li><a href="http://edition.cnn.com/">CNN</a>
+| <a href="http://nytimes.com/">NY Times</a></li>
+<li><a href="http://www.flickr.com/explore/interesting/7days/">Flickr Interesting</a></a></li>
+</ul>
+</ul>
+</div><!-- col -->
+
+
+
+
+
+<div class="col">
+<ul>
+<li><a href="http://twitter.com/">Twitter</a></li>
+<li><a href="http://facebook.com/">Facebook</a></li>
+<li><a href="http://www.filehippo.com">File Hippo</a></li>
+<li><a href="http://www.linux.com">Linux.com</a></li>
+<li><a href="https://docs.djangoproject.com/">Django</a> |
+    <a href="http://www.postgresql.org/docs/9.3/static/index.html">PostgreSQL</a></li>
+</ul>
+</ul>
+</div><!-- col -->
+
+
+<div class="col arabic">
+<ul>
+<li><a href="http://www.alriyadh.com/">الرياض</a></li>
+<li><a href="http://www.aleqt.com/">الاقتصادية</a></li>
+<li><a href="http://www.al-jazirah.com/">الجزيرة</a></li>
+<li><a href="http://www.alwatan.com.sa/">الوطن</a></li>
+<li><a href="http://www.alyaum.com/">اليوم</a></li>
+<li><a href="http://www.asharqalawsat.com/">الشرق الأوسط</a></li>
+<li><a href="http://www.alarabiya.net/">العربية</a></li>
+<li><a href="http://www.bbc.co.uk/arabic/">BBC</a></li>
+</ul>
+</div><!-- col -->
