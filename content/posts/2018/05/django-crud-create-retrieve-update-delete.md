@@ -28,8 +28,8 @@ In this post I briefly cover the step needed to create a CRUD app in
 - Define the URLs (i.e. URL to View mapping)
 - Create the Templates
 
-**Note** These step are updated for Django 2 which requires Python 3, if you don't 
-have Python 3 installed on your system you
+**Note:** These step are updated for Django 2 which requires Python 3, if you don't 
+have Python 3 installed on your system you will find needed steps for your OS here:
 [How To Install and Set Up a Local Programming Environment for Python 3](https://www.digitalocean.com/community/tutorial_series/how-to-install-and-set-up-a-local-programming-environment-for-python-3)
 
 
