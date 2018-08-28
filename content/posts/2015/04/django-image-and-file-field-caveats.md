@@ -12,7 +12,7 @@ tags:
 wordpress_id: 1773
 
 ---
-Everytime I work with Image or File fields in Django I forget some tiny detail that waste 10-20 minutes until I remember what was I missing, I always say I will remeber it next time but I never do! so I made a list of common errors I keep doing while working with Image/File fields:
+Every time I work with Image or File fields in Django I forget some tiny detail that waste 10-20 minutes until I remember what was I missing, I always say I will remember it next time but I never do! so I made a list of common errors I keep doing while working with Image/File fields:
 
 *For complete working project: (https://github.com/rayed/dj-imagefield-example)*
 
@@ -22,13 +22,13 @@ Make sure you set proper values for MEDIA_URL and MEDIA_ROOT in your settings.py
 
     my_new_site/
         apps/
-        apps/
-            settings.py
-        gallery/
-        blog/
+            apps/
+                settings.py
+            gallery/
+            blog/
         www/
-        media/
-        static/
+            media/
+            static/
         requirements.txt
 
 I would put the following settings (for both MEDIA and STATIC files):
