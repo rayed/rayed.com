@@ -49,6 +49,7 @@ Now that we have our `requirements.txt` file and our Django app directory `apps`
 We start with our `Dockerfile`:
 
     FROM python:3.6
+    ENV PYTHONUNBUFFERED 1
     COPY . /app
     WORKDIR /app
     RUN pip install -r requirements.txt
