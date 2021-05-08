@@ -12,3 +12,6 @@ sectionPagesMenu = "main"
     instagram = "https://www.instagram.com/rayed/"
     linkedin = "https://www.linkedin.com/in/rayed/"
     featured_image = "/static/1500x500.jpeg"
+
+[markup.goldmark.renderer]
+unsafe= true
