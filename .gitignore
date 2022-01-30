@@ -2,3 +2,5 @@
 /disqus_map.out.csv
 /.vscode
 *.swp
+.hugo_build.lock
+/resources
