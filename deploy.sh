@@ -1,4 +1,4 @@
 #!/bin/sh
 
 HUGO_ENV="production" hugo
-rsync -azv  public rr.sa:rayed.com
+rsync -azv  public rayed.com:rayed.com
