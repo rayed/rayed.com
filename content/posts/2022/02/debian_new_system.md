@@ -79,7 +79,6 @@ Ref: https://unix.stackexchange.com/a/397464
     set mouse=r
     :
 
-
 ### Change Default Editor
 
     sudo apt install -y vim
@@ -89,6 +88,10 @@ Ref: https://unix.stackexchange.com/a/397464
 
     sudo hostnamectl set-hostname dev1
 
+### Development Tools
+
+    sudo apt install build-essential
+    
 ### Python 3 
 
     sudo apt install -y python3-venv
